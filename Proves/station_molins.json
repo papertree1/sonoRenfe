@@ -1,0 +1,96 @@
+{
+    "id": "72300",
+    "name": "Molins de Rei",
+    "accessible": false,
+    "latitude": 41.4097927352311,
+    "longitude": 2.0211437109936,
+    "position": "http://maps.google.es/?ll=41.4097927352311,2.0211437109936",
+    "connections": [
+        {
+            "id": "R1",
+            "description": {
+                "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+            "orderNumber": 3,
+            "type": {
+                "id": "TRAIN",
+                "description": {
+                    "ca": "Tren",
+                    "es": "Tren",
+                    "en": "Train"
+                }
+            },
+            "line": {
+                "id": "R1",
+                "name": "R1"
+            }
+        },
+        {
+            "id": "R4",
+            "description": {
+                "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+            "orderNumber": 8,
+            "type": {
+                "id": "TRAIN",
+                "description": {
+                    "ca": "Tren",
+                    "es": "Tren",
+                    "en": "Train"
+                }
+            },
+            "line": {
+                "id": "R4",
+                "name": "R4"
+            }
+        }
+    ],
+    "services": [
+        {
+            "id": "PB",
+            "description": {
+                "ca": "Aparcament de bicicletes",
+                "es": "Aparcamiento de bicicletas",
+                "en": "Bicycle park"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+            "orderNumber": 4
+        },
+        {
+            "id": "BU",
+            "description": {
+                "ca": "Autobús urbà",
+                "es": "Autobús urbano",
+                "en": "City bus"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+            "orderNumber": 6
+        },
+        {
+            "id": "WC",
+            "description": {
+                "ca": "Lavabos",
+                "es": "Lavabos",
+                "en": "Toilet"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+            "orderNumber": 7
+        },
+        {
+            "id": "ASC",
+            "description": {
+                "ca": "Ascensor",
+                "es": "Ascensor",
+                "en": "Lift"
+            },
+            "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+            "orderNumber": 8
+        }
+    ]
+}

@@ -1,0 +1,3972 @@
+{
+    "id": "R1",
+    "name": "R1",
+    "type": {
+        "id": "RODALIES",
+        "description": {
+            "ca": "Rodalies",
+            "es": "Rodalies",
+            "en": "Rodalies"
+        }
+    },
+    "wayStations": {
+        "ca": "per Mataró",
+        "es": "por Mataró",
+        "en": "by Mataró"
+    },
+    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+    "orderNumber": 1,
+    "journeyDescription": "Molins de Rei - Maçanet-Massanes",
+    "originStation": {
+        "id": "72300",
+        "name": "Molins de Rei",
+        "accessible": false
+    },
+    "destinationStation": {
+        "id": "79200",
+        "name": "Maçanet-Massanes",
+        "accessible": true
+    },
+    "stations": [
+        {
+            "id": "72300",
+            "name": "Molins de Rei",
+            "accessible": false,
+            "latitude": 41.4097927352311,
+            "longitude": 2.0211437109936,
+            "position": "http://maps.google.es/?ll=41.4097927352311,2.0211437109936",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                }
+            ]
+        },
+        {
+            "id": "72301",
+            "name": "Sant Feliu de Llobregat",
+            "accessible": false,
+            "latitude": 41.383041211783,
+            "longitude": 2.04808089444088,
+            "position": "http://maps.google.es/?ll=41.383041211783,2.04808089444088",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                }
+            ]
+        },
+        {
+            "id": "72302",
+            "name": "Sant Joan Despí",
+            "accessible": true,
+            "latitude": 41.3686049379763,
+            "longitude": 2.06035905784607,
+            "position": "http://maps.google.es/?ll=41.3686049379763,2.06035905784607",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "72303",
+            "name": "Cornellà",
+            "accessible": false,
+            "latitude": 41.3575730525019,
+            "longitude": 2.0706809131878,
+            "position": "http://maps.google.es/?ll=41.3575730525019,2.0706809131878",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                },
+                {
+                    "id": "L5",
+                    "description": {
+                        "ca": "Cornellà Centre / Horta",
+                        "es": "Cornellà Centre / Horta",
+                        "en": "Cornellà Centre / Horta"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L5.svg",
+                    "orderNumber": 40,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "T1",
+                    "description": {
+                        "ca": "Francesc Macià / Bon Viatge",
+                        "es": "Francesc Macià / Bon Viatge",
+                        "en": "Francesc Macià / Bon Viatge"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/T1.svg",
+                    "orderNumber": 49,
+                    "type": {
+                        "id": "TRAM",
+                        "description": {
+                            "ca": "Tramvia",
+                            "es": "Tranvía",
+                            "en": "Tram"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "T2",
+                    "description": {
+                        "ca": "Francesc Macià / Llevant i Les Planes",
+                        "es": "Francesc Macià / Llevant i Les Planes",
+                        "en": "Francesc Macià / Llevant i Les Planes"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/T2.svg",
+                    "orderNumber": 50,
+                    "type": {
+                        "id": "TRAM",
+                        "description": {
+                            "ca": "Tramvia",
+                            "es": "Tranvía",
+                            "en": "Tram"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                }
+            ]
+        },
+        {
+            "id": "72305",
+            "name": "L'Hospitalet de Llobregat",
+            "accessible": true,
+            "latitude": 41.3641637913141,
+            "longitude": 2.10109308019692,
+            "position": "http://maps.google.es/?ll=41.3641637913141,2.10109308019692",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R3",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Puigcerdà (per Vic)",
+                        "es": "L'Hospitalet de Llobregat - Puigcerdà (por Vic)",
+                        "en": "L'Hospitalet de Llobregat - Puigcerdà (by Vic)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R3.svg",
+                    "orderNumber": 7,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R3",
+                        "name": "R3"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "L1",
+                    "description": {
+                        "ca": "Hospital de Bellvitge / Fondo",
+                        "es": "Hospital de Bellvitge / Fondo",
+                        "en": "Hospital de Bellvitge / Fondo"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L1.svg",
+                    "orderNumber": 36,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "71801",
+            "name": "Barcelona-Sants",
+            "accessible": true,
+            "latitude": 41.3790789811861,
+            "longitude": 2.14028390325908,
+            "position": "http://maps.google.es/?ll=41.3790789811861,2.14028390325908",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R2",
+                    "description": {
+                        "ca": "Castelldefels - Granollers Centre",
+                        "es": "Castelldefels - Granollers Centre",
+                        "en": "Castelldefels - Granollers Centre"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2.svg",
+                    "orderNumber": 4,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2",
+                        "name": "R2"
+                    }
+                },
+                {
+                    "id": "R2N",
+                    "description": {
+                        "ca": "Aeroport - Maçanet-Massanes (per Granollers Centre)",
+                        "es": "Aeroport - Maçanet-Massanes (por Granollers Centre)",
+                        "en": "Aeroport - Maçanet-Massanes (by Granollers Centre)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2_nord.svg",
+                    "orderNumber": 5,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2N",
+                        "name": "R2 Nord"
+                    }
+                },
+                {
+                    "id": "R2S",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Sant Vicenç de Calders (per Vilanova i la Geltrú)",
+                        "es": "Barcelona Estació de França - Sant Vicenç de Calders (por Vilanova i la Geltrú)",
+                        "en": "Barcelona Estació de França - Sant Vicenç de Calders (by Vilanova i la Geltrú)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2_sud.svg",
+                    "orderNumber": 6,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2S",
+                        "name": "R2 Sud"
+                    }
+                },
+                {
+                    "id": "R3",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Puigcerdà (per Vic)",
+                        "es": "L'Hospitalet de Llobregat - Puigcerdà (por Vic)",
+                        "en": "L'Hospitalet de Llobregat - Puigcerdà (by Vic)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R3.svg",
+                    "orderNumber": 7,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R3",
+                        "name": "R3"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                },
+                {
+                    "id": "R11",
+                    "description": {
+                        "ca": "Barcelona Sants - Portbou (per Granollers Centre i Girona)",
+                        "es": "Barcelona Sants - Portbou (por Granollers Centre y Girona)",
+                        "en": "Barcelona Sants - Portbou (by Granollers Centre and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R11.svg",
+                    "orderNumber": 11,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R11",
+                        "name": "R11"
+                    }
+                },
+                {
+                    "id": "R13",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Lleida (per Valls)",
+                        "es": "Barcelona Estació de França - Lleida (por Valls)",
+                        "en": "Barcelona Estació de França - Lleida (by Valls)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R13.svg",
+                    "orderNumber": 13,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R13",
+                        "name": "R13"
+                    }
+                },
+                {
+                    "id": "R14",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Lleida (per Tarragona i Reus)",
+                        "es": "Barcelona Estació de França - Lleida (por Tarragona y Reus)",
+                        "en": "Barcelona Estació de França - Lleida (by Tarragona and Reus)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R14.svg",
+                    "orderNumber": 14,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R14",
+                        "name": "R14"
+                    }
+                },
+                {
+                    "id": "R15",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Reus - Riba-roja d'Ebre",
+                        "es": "Barcelona Estació de França - Reus - Riba-roja d'Ebre",
+                        "en": "Barcelona Estació de França - Reus - Riba-roja d'Ebre"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R15.svg",
+                    "orderNumber": 15,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R15",
+                        "name": "R15"
+                    }
+                },
+                {
+                    "id": "R16",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Tarragona - Tortosa / Ulldecona",
+                        "es": "Barcelona Estació de França - Tarragona - Tortosa / Ulldecona",
+                        "en": "Barcelona Estació de França - Tarragona - Tortosa / Ulldecona"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R16.svg",
+                    "orderNumber": 16,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R16",
+                        "name": "R16"
+                    }
+                },
+                {
+                    "id": "R17",
+                    "description": {
+                        "ca": "Barcelona Estació de França - Salou-Port Aventura",
+                        "es": "Barcelona Estació de França - Salou-Port Aventura",
+                        "en": "Barcelona Estació de França - Salou-Port Aventura"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R17.svg",
+                    "orderNumber": 17,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R17",
+                        "name": "R17"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "R-MD",
+                    "description": {
+                        "ca": "Altres serveis ferroviaris",
+                        "es": "Otros servicios ferroviarios",
+                        "en": "Other train services"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/renfe_MD.svg",
+                    "orderNumber": 34,
+                    "type": {
+                        "id": "OTHER",
+                        "description": {
+                            "ca": "Altres",
+                            "es": "Otros",
+                            "en": "Others"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "R-AVE",
+                    "description": {
+                        "ca": "Tren d'Alta Velocitat",
+                        "es": "Tren de Alta Velocidad",
+                        "en": "High Speed Train"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/renfe_AVE.svg",
+                    "orderNumber": 35,
+                    "type": {
+                        "id": "OTHER",
+                        "description": {
+                            "ca": "Altres",
+                            "es": "Otros",
+                            "en": "Others"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L3",
+                    "description": {
+                        "ca": "Zona Universitària / Trinitat Nova",
+                        "es": "Zona Universitària / Trinitat Nova",
+                        "en": "Zona Universitària / Trinitat Nova"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L3.svg",
+                    "orderNumber": 38,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L5",
+                    "description": {
+                        "ca": "Cornellà Centre / Horta",
+                        "es": "Cornellà Centre / Horta",
+                        "en": "Cornellà Centre / Horta"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L5.svg",
+                    "orderNumber": 40,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "ATEN",
+                    "description": {
+                        "ca": "Servei d’assistència personal permanent",
+                        "es": "Servicio de asistencia personal permanente",
+                        "en": "Permanent personal assistance  service"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/assistencia_permanent.svg",
+                    "orderNumber": 1
+                },
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "B",
+                    "description": {
+                        "ca": "Estació d'autobusos",
+                        "es": "Estación de autobuses",
+                        "en": "Bus station"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/estacio_bus.svg",
+                    "orderNumber": 5
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "EBI",
+                    "description": {
+                        "ca": "Lloguer de bicicletes públic",
+                        "es": "Alquiler de bicicletas público",
+                        "en": "Public bike rental"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/lloguer_bicicleta_publica.svg",
+                    "orderNumber": 11
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "78805",
+            "name": "Barcelona-Plaça de Catalunya",
+            "accessible": true,
+            "latitude": 41.3874900044692,
+            "longitude": 2.16960499794846,
+            "position": "http://maps.google.es/?ll=41.3874900044692,2.16960499794846",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R3",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Puigcerdà (per Vic)",
+                        "es": "L'Hospitalet de Llobregat - Puigcerdà (por Vic)",
+                        "en": "L'Hospitalet de Llobregat - Puigcerdà (by Vic)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R3.svg",
+                    "orderNumber": 7,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R3",
+                        "name": "R3"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "S1",
+                    "description": {
+                        "ca": "Barcelona- Pl. Catalunya / Terrassa",
+                        "es": "Barcelona- Pl. Catalunya / Terrassa",
+                        "en": "Barcelona- Pl. Catalunya / Terrassa"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/S1.svg",
+                    "orderNumber": 23,
+                    "type": {
+                        "id": "RAILWAY",
+                        "description": {
+                            "ca": "Ferrocarril",
+                            "es": "Ferrocarril",
+                            "en": "Railway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "S2",
+                    "description": {
+                        "ca": "Barcelona- Pl. Catalunya / Sabadell",
+                        "es": "Barcelona- Pl. Catalunya / Sabadell",
+                        "en": "Barcelona- Pl. Catalunya / Sabadell"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/S2.svg",
+                    "orderNumber": 24,
+                    "type": {
+                        "id": "RAILWAY",
+                        "description": {
+                            "ca": "Ferrocarril",
+                            "es": "Ferrocarril",
+                            "en": "Railway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L1",
+                    "description": {
+                        "ca": "Hospital de Bellvitge / Fondo",
+                        "es": "Hospital de Bellvitge / Fondo",
+                        "en": "Hospital de Bellvitge / Fondo"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L1.svg",
+                    "orderNumber": 36,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L3",
+                    "description": {
+                        "ca": "Zona Universitària / Trinitat Nova",
+                        "es": "Zona Universitària / Trinitat Nova",
+                        "en": "Zona Universitària / Trinitat Nova"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L3.svg",
+                    "orderNumber": 38,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L6",
+                    "description": {
+                        "ca": "Barcelona-Pl. Catalunya / Reina Elisenda",
+                        "es": "Barcelona-Pl. Catalunya / Reina Elisenda",
+                        "en": "Barcelona-Pl. Catalunya / Reina Elisenda"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L6.svg",
+                    "orderNumber": 41,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L7",
+                    "description": {
+                        "ca": "Barcelona-Pl. Catalunya / Av. Tibidabo",
+                        "es": "Barcelona-Pl. Catalunya / Av. Tibidabo",
+                        "en": "Barcelona-Pl. Catalunya / Av. Tibidabo"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L7.svg",
+                    "orderNumber": 42,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "EBI",
+                    "description": {
+                        "ca": "Lloguer de bicicletes públic",
+                        "es": "Alquiler de bicicletas público",
+                        "en": "Public bike rental"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/lloguer_bicicleta_publica.svg",
+                    "orderNumber": 11
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "78804",
+            "name": "Barcelona-Arc de Triomf",
+            "accessible": true,
+            "latitude": 41.3916756596852,
+            "longitude": 2.18025975992386,
+            "position": "http://maps.google.es/?ll=41.3916756596852,2.18025975992386",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R3",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Puigcerdà (per Vic)",
+                        "es": "L'Hospitalet de Llobregat - Puigcerdà (por Vic)",
+                        "en": "L'Hospitalet de Llobregat - Puigcerdà (by Vic)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R3.svg",
+                    "orderNumber": 7,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R3",
+                        "name": "R3"
+                    }
+                },
+                {
+                    "id": "R4",
+                    "description": {
+                        "ca": "Sant Vicenç de Calders - Manresa (per Vilafranca del Penedès)",
+                        "es": "Sant Vicenç de Calders - Manresa (por Vilafranca del Penedès)",
+                        "en": "Sant Vicenç de Calders - Manresa (by Vilafranca del Penedès)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R4.svg",
+                    "orderNumber": 8,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R4",
+                        "name": "R4"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "R-MD",
+                    "description": {
+                        "ca": "Altres serveis ferroviaris",
+                        "es": "Otros servicios ferroviarios",
+                        "en": "Other train services"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/renfe_MD.svg",
+                    "orderNumber": 34,
+                    "type": {
+                        "id": "OTHER",
+                        "description": {
+                            "ca": "Altres",
+                            "es": "Otros",
+                            "en": "Others"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L1",
+                    "description": {
+                        "ca": "Hospital de Bellvitge / Fondo",
+                        "es": "Hospital de Bellvitge / Fondo",
+                        "en": "Hospital de Bellvitge / Fondo"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L1.svg",
+                    "orderNumber": 36,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "B",
+                    "description": {
+                        "ca": "Estació d'autobusos",
+                        "es": "Estación de autobuses",
+                        "en": "Bus station"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/estacio_bus.svg",
+                    "orderNumber": 5
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "EBI",
+                    "description": {
+                        "ca": "Lloguer de bicicletes públic",
+                        "es": "Alquiler de bicicletas público",
+                        "en": "Public bike rental"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/lloguer_bicicleta_publica.svg",
+                    "orderNumber": 11
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79009",
+            "name": "Barcelona-El Clot",
+            "accessible": true,
+            "latitude": 41.4104189272174,
+            "longitude": 2.18920138224746,
+            "position": "http://maps.google.es/?ll=41.4104189272174,2.18920138224746",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R2",
+                    "description": {
+                        "ca": "Castelldefels - Granollers Centre",
+                        "es": "Castelldefels - Granollers Centre",
+                        "en": "Castelldefels - Granollers Centre"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2.svg",
+                    "orderNumber": 4,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2",
+                        "name": "R2"
+                    }
+                },
+                {
+                    "id": "R2N",
+                    "description": {
+                        "ca": "Aeroport - Maçanet-Massanes (per Granollers Centre)",
+                        "es": "Aeroport - Maçanet-Massanes (por Granollers Centre)",
+                        "en": "Aeroport - Maçanet-Massanes (by Granollers Centre)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2_nord.svg",
+                    "orderNumber": 5,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2N",
+                        "name": "R2 Nord"
+                    }
+                },
+                {
+                    "id": "R11",
+                    "description": {
+                        "ca": "Barcelona Sants - Portbou (per Granollers Centre i Girona)",
+                        "es": "Barcelona Sants - Portbou (por Granollers Centre y Girona)",
+                        "en": "Barcelona Sants - Portbou (by Granollers Centre and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R11.svg",
+                    "orderNumber": 11,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R11",
+                        "name": "R11"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "L1",
+                    "description": {
+                        "ca": "Hospital de Bellvitge / Fondo",
+                        "es": "Hospital de Bellvitge / Fondo",
+                        "en": "Hospital de Bellvitge / Fondo"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L1.svg",
+                    "orderNumber": 36,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "L2",
+                    "description": {
+                        "ca": "Paral·lel / Pep Ventura",
+                        "es": "Paral·lel / Pep Ventura",
+                        "en": "Paral·lel / Pep Ventura"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/L2.svg",
+                    "orderNumber": 37,
+                    "type": {
+                        "id": "METRO",
+                        "description": {
+                            "ca": "Metro",
+                            "es": "Metro",
+                            "en": "Subway"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "EBI",
+                    "description": {
+                        "ca": "Lloguer de bicicletes públic",
+                        "es": "Alquiler de bicicletas público",
+                        "en": "Public bike rental"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/lloguer_bicicleta_publica.svg",
+                    "orderNumber": 11
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79403",
+            "name": "Sant Adrià de Besòs",
+            "accessible": true,
+            "latitude": 41.4241213971941,
+            "longitude": 2.2303327979395,
+            "position": "http://maps.google.es/?ll=41.4241213971941,2.2303327979395",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                },
+                {
+                    "id": "T4",
+                    "description": {
+                        "ca": "Estació de Sant Adrià / Ciutadella i Vila Olímpica",
+                        "es": "Estació de Sant Adrià / Ciutadella i Vila Olímpica",
+                        "en": "Estació de Sant Adrià / Ciutadella i Vila Olímpica"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/T4.svg",
+                    "orderNumber": 51,
+                    "type": {
+                        "id": "TRAM",
+                        "description": {
+                            "ca": "Tramvia",
+                            "es": "Tranvía",
+                            "en": "Tram"
+                        }
+                    },
+                    "line": null
+                },
+                {
+                    "id": "T6",
+                    "description": {
+                        "ca": "Estació de Sant Adrià / Gorg",
+                        "es": "Estació de Sant Adrià / Gorg",
+                        "en": "Estació de Sant Adrià / Gorg"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/T6.svg",
+                    "orderNumber": 52,
+                    "type": {
+                        "id": "TRAM",
+                        "description": {
+                            "ca": "Tramvia",
+                            "es": "Tranvía",
+                            "en": "Tram"
+                        }
+                    },
+                    "line": null
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79404",
+            "name": "Badalona",
+            "accessible": true,
+            "latitude": 41.4455716188953,
+            "longitude": 2.24884064804042,
+            "position": "http://maps.google.es/?ll=41.4455716188953,2.24884064804042",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79405",
+            "name": "Montgat",
+            "accessible": true,
+            "latitude": 41.4627650088159,
+            "longitude": 2.27189301238515,
+            "position": "http://maps.google.es/?ll=41.4627650088159,2.27189301238515",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                }
+            ]
+        },
+        {
+            "id": "79406",
+            "name": "Montgat Nord",
+            "accessible": true,
+            "latitude": 41.4687846270618,
+            "longitude": 2.28689088199757,
+            "position": "http://maps.google.es/?ll=41.4687846270618,2.28689088199757",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79407",
+            "name": "El Masnou",
+            "accessible": true,
+            "latitude": 41.4768427803983,
+            "longitude": 2.3099990195256,
+            "position": "http://maps.google.es/?ll=41.4768427803983,2.3099990195256",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79408",
+            "name": "Ocata",
+            "accessible": false,
+            "latitude": 41.478885785846,
+            "longitude": 2.31909666740158,
+            "position": "http://maps.google.es/?ll=41.478885785846,2.31909666740158",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                }
+            ]
+        },
+        {
+            "id": "79409",
+            "name": "Premià de Mar",
+            "accessible": true,
+            "latitude": 41.4874688718294,
+            "longitude": 2.35435264772193,
+            "position": "http://maps.google.es/?ll=41.4874688718294,2.35435264772193",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79410",
+            "name": "Vilassar de Mar",
+            "accessible": true,
+            "latitude": 41.5005305277776,
+            "longitude": 2.38985753761095,
+            "position": "http://maps.google.es/?ll=41.5005305277776,2.38985753761095",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79412",
+            "name": "Cabrera de Mar-Vilassar de Mar",
+            "accessible": true,
+            "latitude": 41.5068927189113,
+            "longitude": 2.40178997286725,
+            "position": "http://maps.google.es/?ll=41.5068927189113,2.40178997286725",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "RP",
+                    "description": {
+                        "ca": "Accés amb rampa",
+                        "es": "Acceso con rampa",
+                        "en": "Acces with ramp"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/rampa.svg",
+                    "orderNumber": 10
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79500",
+            "name": "Mataró",
+            "accessible": true,
+            "latitude": 41.5329839540651,
+            "longitude": 2.44525100021829,
+            "position": "http://maps.google.es/?ll=41.5329839540651,2.44525100021829",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79501",
+            "name": "Sant Andreu de Llavaneres",
+            "accessible": true,
+            "latitude": 41.5553519451487,
+            "longitude": 2.49821544222003,
+            "position": "http://maps.google.es/?ll=41.5553519451487,2.49821544222003",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79502",
+            "name": "Caldes d'Estrac",
+            "accessible": true,
+            "latitude": 41.5685858175612,
+            "longitude": 2.5260652781153,
+            "position": "http://maps.google.es/?ll=41.5685858175612,2.5260652781153",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79600",
+            "name": "Arenys de Mar",
+            "accessible": true,
+            "latitude": 41.5773814564398,
+            "longitude": 2.54931724524282,
+            "position": "http://maps.google.es/?ll=41.5773814564398,2.54931724524282",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79601",
+            "name": "Canet de Mar",
+            "accessible": true,
+            "latitude": 41.5862981509349,
+            "longitude": 2.58050205524244,
+            "position": "http://maps.google.es/?ll=41.5862981509349,2.58050205524244",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79602",
+            "name": "Sant Pol de Mar",
+            "accessible": false,
+            "latitude": 41.6014769329979,
+            "longitude": 2.62408708381096,
+            "position": "http://maps.google.es/?ll=41.6014769329979,2.62408708381096",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                }
+            ]
+        },
+        {
+            "id": "79603",
+            "name": "Calella",
+            "accessible": true,
+            "latitude": 41.6146346759072,
+            "longitude": 2.66605267966984,
+            "position": "http://maps.google.es/?ll=41.6146346759072,2.66605267966984",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79604",
+            "name": "Pineda de Mar",
+            "accessible": true,
+            "latitude": 41.6224782675301,
+            "longitude": 2.69406436583196,
+            "position": "http://maps.google.es/?ll=41.6224782675301,2.69406436583196",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79608",
+            "name": "Santa Susanna",
+            "accessible": true,
+            "latitude": 41.6302109665855,
+            "longitude": 2.7166455546602,
+            "position": "http://maps.google.es/?ll=41.6302109665855,2.7166455546602",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79605",
+            "name": "Malgrat de Mar",
+            "accessible": true,
+            "latitude": 41.6416031868143,
+            "longitude": 2.7413807610443,
+            "position": "http://maps.google.es/?ll=41.6416031868143,2.7413807610443",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "PB",
+                    "description": {
+                        "ca": "Aparcament de bicicletes",
+                        "es": "Aparcamiento de bicicletas",
+                        "en": "Bicycle park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament_bici.svg",
+                    "orderNumber": 4
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79606",
+            "name": "Blanes",
+            "accessible": true,
+            "latitude": 41.6735342002693,
+            "longitude": 2.7690496193202,
+            "position": "http://maps.google.es/?ll=41.6735342002693,2.7690496193202",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79607",
+            "name": "Tordera",
+            "accessible": true,
+            "latitude": 41.7070305154983,
+            "longitude": 2.71944036373631,
+            "position": "http://maps.google.es/?ll=41.7070305154983,2.71944036373631",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        },
+        {
+            "id": "79200",
+            "name": "Maçanet-Massanes",
+            "accessible": true,
+            "latitude": 41.7724990136366,
+            "longitude": 2.67336035783649,
+            "position": "http://maps.google.es/?ll=41.7724990136366,2.67336035783649",
+            "connections": [
+                {
+                    "id": "R1",
+                    "description": {
+                        "ca": "Molins de Rei - Maçanet-Massanes (per Mataró)",
+                        "es": "Molins de Rei - Maçanet-Massanes (por Mataró)",
+                        "en": "Molins de Rei - Maçanet-Massanes (by Mataró)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R1.svg",
+                    "orderNumber": 3,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R1",
+                        "name": "R1"
+                    }
+                },
+                {
+                    "id": "R2N",
+                    "description": {
+                        "ca": "Aeroport - Maçanet-Massanes (per Granollers Centre)",
+                        "es": "Aeroport - Maçanet-Massanes (por Granollers Centre)",
+                        "en": "Aeroport - Maçanet-Massanes (by Granollers Centre)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R2_nord.svg",
+                    "orderNumber": 5,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R2N",
+                        "name": "R2 Nord"
+                    }
+                },
+                {
+                    "id": "R11",
+                    "description": {
+                        "ca": "Barcelona Sants - Portbou (per Granollers Centre i Girona)",
+                        "es": "Barcelona Sants - Portbou (por Granollers Centre y Girona)",
+                        "en": "Barcelona Sants - Portbou (by Granollers Centre and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/R11.svg",
+                    "orderNumber": 11,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "R11",
+                        "name": "R11"
+                    }
+                },
+                {
+                    "id": "RG1",
+                    "description": {
+                        "ca": "L'Hospitalet de Llobregat - Figueres / Portbou (per Mataró i Girona)",
+                        "es": "L'Hospitalet de Llobregat - Figueres / Portbou (por Mataró y Girona)",
+                        "en": "L'Hospitalet de Llobregat - Figueres / Portbou (by Mataró and Girona)"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/RG1.svg",
+                    "orderNumber": 20,
+                    "type": {
+                        "id": "TRAIN",
+                        "description": {
+                            "ca": "Tren",
+                            "es": "Tren",
+                            "en": "Train"
+                        }
+                    },
+                    "line": {
+                        "id": "RG1",
+                        "name": "RG1"
+                    }
+                }
+            ],
+            "services": [
+                {
+                    "id": "P",
+                    "description": {
+                        "ca": "Aparcament",
+                        "es": "Aparcamiento",
+                        "en": "Car park"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/aparcament.svg",
+                    "orderNumber": 3
+                },
+                {
+                    "id": "BU",
+                    "description": {
+                        "ca": "Autobús urbà",
+                        "es": "Autobús urbano",
+                        "en": "City bus"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/bus_urba.svg",
+                    "orderNumber": 6
+                },
+                {
+                    "id": "WC",
+                    "description": {
+                        "ca": "Lavabos",
+                        "es": "Lavabos",
+                        "en": "Toilet"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/wc.svg",
+                    "orderNumber": 7
+                },
+                {
+                    "id": "ASC",
+                    "description": {
+                        "ca": "Ascensor",
+                        "es": "Ascensor",
+                        "en": "Lift"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/ascensor.svg",
+                    "orderNumber": 8
+                },
+                {
+                    "id": "ACC",
+                    "description": {
+                        "ca": "Accessibilitat",
+                        "es": "Accessibilidad",
+                        "en": "Accessibility"
+                    },
+                    "imageUrl": "http://www.gencat.cat/rodalies/media/img/svg/accessibilitat.svg",
+                    "orderNumber": 12
+                }
+            ]
+        }
+    ]
+}",
