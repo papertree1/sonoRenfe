@@ -4,7 +4,10 @@
 - Refinar la idea i planificar el quadrimestre.
 
 ## 17/02
-- Miau
+- Recerca de diferents mètodes de fer HTTP Requests dins de Max
+    - Objecte [`maxurl`](https://docs.cycling74.com/reference/maxurl/)
+    - Llibreria [Node for Max](https://docs.cycling74.com/apiref/nodeformax/)
+- Exploració i inici d'implementació de l'objecte `maxurl`
 
 ## 24/02
 - Miau
