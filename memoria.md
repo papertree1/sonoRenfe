@@ -8,6 +8,8 @@
     - Objecte [`maxurl`](https://docs.cycling74.com/reference/maxurl/)
     - Llibreria [Node for Max](https://docs.cycling74.com/apiref/nodeformax/)
 - Exploració i inici d'implementació de l'objecte `maxurl`
+    - Proves amb diferents endpoints de l'API per veure quina informació ens proporcionen
+    - Anàlisi amb els fitxers .json inclosos a la carpeta [/Proves](/Proves), que corresponen a les respostes de diferents requests
 
 ## 24/02
 - Miau
