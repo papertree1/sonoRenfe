@@ -1,9 +1,8 @@
 # Memòria
-
-## 10/02
+## 10 de febrer
 - Refinar la idea i planificar el quadrimestre.
 
-## 17/02
+## 17 de febrer
 - Recerca de diferents mètodes de fer HTTP Requests dins de Max
     - Objecte [`maxurl`](https://docs.cycling74.com/reference/maxurl/)
     - Llibreria [Node for Max](https://docs.cycling74.com/apiref/nodeformax/)
@@ -11,50 +10,50 @@
     - Proves amb diferents endpoints de l'API per veure quina informació ens proporcionen
     - Anàlisi amb els fitxers .json inclosos a la carpeta [/Proves](/Proves), que corresponen a les respostes de diferents requests
 
-## 24/02
+## 24 de febrer
 - Trobada app Transporta'm, que consulta els trens a la seva propia API (veure links als [Recursos](https://github.com/papertree1/sonoRenfe/blob/main/recursos.md))
 
-## 03/03
+## 03 de març
 - Miau
 
-## 10/03
+## 10 de març
 - Miau
 
-## 17/03
+## 17 de març
 - Miau
 
-## 24/03
+## 24 de març
 - Miau
 
-## 03/04
+## 03 d'abril
 - Miau
 
-## 10/04
+## 10 d'abril
 - Miau
 
-## 17/04
+## 17 d'abril
 - Miau
 
-## 24/04
+## 24 d'abril
 - Miau
 
-## 31/04
+## 31 d'abril
 - Miau
 
-## 07/05
+## 07 de maig
 - Miau
 
-## 14/05
+## 14 de maig
 - Miau
 
-## 21/05
+## 21 de maig
 - Miau
 
-## 28/05
+## 28 de maig
 - Miau
 
-## 05/06
+## 05 de juny
 - Miau
 
-## 12/06
+## 12 de juny
 - Miau
