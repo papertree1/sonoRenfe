@@ -12,7 +12,7 @@
     - Anàlisi amb els fitxers .json inclosos a la carpeta [/Proves](/Proves), que corresponen a les respostes de diferents requests
 
 ## 24/02
-- Miau
+- Trobada app Transporta'm, que consulta els trens a la seva propia API (veure links als [Recursos](https://github.com/papertree1/sonoRenfe/blob/main/recursos.md))
 
 ## 03/03
 - Miau
