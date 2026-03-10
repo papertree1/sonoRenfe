@@ -9,9 +9,23 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// prova de petició a la API de Renfe
+fetchAPI();
+
+function fetchAPI() {
+  fetch(`https://serveisgrs.rodalies.gencat.cat/api/lines`)
+    .then(response => response.json())
+    .then(data => {
+      fs.writeFile("provaFetch.json", JSON.stringify(data), (err) => {
+            if (err) throw err;
+            console.log(`Results saved to provaFetch.json`);
+          });
+    })
+    .catch(error => console.error(`Error fetching API`, error.message));
+}
 
 // script per fer proves de peticions a la API de Renfe
-getTrains();
+// getTrains();
 
 function getTrains() {
   results = { data: [] };
