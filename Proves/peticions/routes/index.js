@@ -16,6 +16,7 @@ getTrains();
 function getTrains() {
   results = { data: [] };
   counter = 0;
+  fileName = 'resultsNet4.json';
 
   console.log("Starting fetches...");
 
@@ -35,9 +36,9 @@ function getTrains() {
         if (counter == 1000) {
           results.data.sort((a, b) => a.id - b.id);
 
-          fs.writeFile('resultsNet2.json', JSON.stringify(results), (err) => {
+          fs.writeFile(fileName, JSON.stringify(results), (err) => {
             if (err) throw err;
-            console.log('Results saved to resultsNet.json');
+            console.log(`Results saved to ${fileName}`);
           });
         }
       })
