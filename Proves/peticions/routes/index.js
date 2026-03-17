@@ -127,7 +127,7 @@ function getStations() {
         break;
     }
 
-    fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=${originStationId}&    destinationStationId=${destinationStationId}`)
+    fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=${originStationId}&destinationStationId=${destinationStationId}`)
       .then(response => response.json())
       .then(data => {
         // add results to a string
