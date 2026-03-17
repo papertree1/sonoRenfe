@@ -24,7 +24,8 @@
 - Hem trobat els IDs de les estacions d'inici i final de cada linia.
 
 ## 17 de març
-- Miau
+- Actualitzat [recursos](./recursos.md) amb la informació que volem de cada endpoint.
+- Començat [l'script](./scripts/obtenirLinies.js) final per a ajuntar les dades i començar a tractar els números per a la sonificació.
 
 ## 24 de març
 - Miau
