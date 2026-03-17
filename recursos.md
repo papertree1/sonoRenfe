@@ -6,6 +6,17 @@
 
 [Swagger de l'API](https://serveisgrs.rodalies.gencat.cat/api/swagger-ui/index.html) (llista d'endpoints)
 
+#### Estructura de l'API
+
+- La informació dels trens i les línies està repartida per tots els endpoints.
+    - **/timetables** IDs dels trens actius en un moment donat
+    - **/timetables** Línia de cada tren
+    - **/timetables** Temps total teòric de la línia
+    - **/trains/id** retorna la informació d'un tren vàlid. En cas de ser un tren actiu, retorna les estacions per on ha passat i les hores
+    - **/lines** estació inicial i final de la línia
+    - **/lines** totes les estacions de la línia
+    - **/stations/id** les connexions de cada parada
+
 [Estat del servei de Rodalies](https://datos.gob.es/ca/catalogo/a09002970-estado-del-servicio-de-cercanias-de-catalunya): XML que s'actualitzen amb RSS
 
 [APIs FGC](https://dadesobertes.fgc.cat/explore/?sort=modified): mirar les que posa "Realtime"
