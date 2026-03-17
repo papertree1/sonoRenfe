@@ -1,0 +1,54 @@
+{
+    "results": [
+        {
+            "id": "R1",
+            "originStation": "72300",
+            "destinationStation": "79200"
+        },
+        {
+            "id": "R2",
+            "originStation": "71705",
+            "destinationStation": "79100"
+        },
+        {
+            "id": "R2N",
+            "originStation": "72400",
+            "destinationStation": "79200"
+        },
+        {
+            "id": "R2S",
+            "originStation": "71600",
+            "destinationStation": "79400"
+        },
+        {
+            "id": "R3",
+            "originStation": "72305",
+            "destinationStation": "77310"
+        },
+        {
+            "id": "R4",
+            "originStation": "71600",
+            "destinationStation": "78600"
+        },
+        {
+            "id": "R7",
+            "originStation": "78802",
+            "destinationStation": "72503"
+        },
+        {
+            "id": "R8",
+            "originStation": "72209",
+            "destinationStation": "79100"
+        },
+        {
+            "id": "R11",
+            "originStation": "71801",
+            "destinationStation": "79316"
+        },
+        {
+            "id": "R13",
+            "originStation": "79400",
+            "destinationStation": "78400"
+        }
+    ]
+}
