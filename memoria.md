@@ -14,8 +14,8 @@
 - Trobada app Transporta'm, que consulta els trens a la seva propia API (veure links als [Recursos](https://github.com/papertree1/sonoRenfe/blob/main/recursos.md))
 
 ## 03 de març
-- Als timetables hi ha els ID dels trens
-- Hem netejat els resultats dels ID dels trens (app node)
+- Hem descobert que als timetables hi ha els ID dels trens de cada línia
+- Hem netejat els resultats dels ID dels trens fent peticions per 1000 IDs i eliminant els que no donen resposta ([app node](./Proves/peticions/routes/index.js))
 - Estem intentant esbrinar com funcionen els temps i dates (renfe caos)
 
 ## 10 de març
