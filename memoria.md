@@ -28,7 +28,9 @@
 - Començat [l'script](./scripts/obtenirLinies.js) final per a ajuntar les dades i començar a tractar els números per a la sonificació.
 
 ## 24 de març
-- Miau
+- Ens hem adonat que l'endpoint `/trains/id` només retorna els horaris de les estacions futures, i elimina les estacions per les quals el tren ja ha passat.
+- Per a obtenir l'estat del servei, doncs, haurem de comparar les dades d'aquest endpoint amb aquelles de `/timetables`.
+- Hem trobat un altre [recurs](./recursos.md) amb informació a temps real de la localització GPS de tots els trens de Renfe.
 
 ## 03 d'abril
 - Miau
