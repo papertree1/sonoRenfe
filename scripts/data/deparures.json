@@ -1,0 +1,220 @@
+{
+    "trains": [
+        {
+            "departureDateHourSelectedStation": "2026-03-24T13:22:59",
+            "platformSelectedStation": "2",
+            "technicalNumber": 28432,
+            "commercialNumber": 28432,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "79005",
+                "name": "Montcada i Reixac",
+                "accessible": false
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T13:34:27",
+            "platformSelectedStation": null,
+            "technicalNumber": 25428,
+            "commercialNumber": 25428,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "79004",
+                "name": "Barcelona-Sant Andreu",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T13:47:19",
+            "platformSelectedStation": null,
+            "technicalNumber": 28434,
+            "commercialNumber": 28434,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "79109",
+                "name": "Les Franqueses-Granollers Nord",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T13:50:44",
+            "platformSelectedStation": null,
+            "technicalNumber": 28436,
+            "commercialNumber": 28436,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "79103",
+                "name": "Palautordera",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T13:58:41",
+            "platformSelectedStation": null,
+            "technicalNumber": 25430,
+            "commercialNumber": 25430,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "71707",
+                "name": "El Prat de Llobregat",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T14:21:00",
+            "platformSelectedStation": null,
+            "technicalNumber": 25432,
+            "commercialNumber": 25432,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T14:44:00",
+            "platformSelectedStation": null,
+            "technicalNumber": 28438,
+            "commercialNumber": 28438,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            }
+        },
+        {
+            "departureDateHourSelectedStation": "2026-03-24T14:51:00",
+            "platformSelectedStation": null,
+            "technicalNumber": 25434,
+            "commercialNumber": 25434,
+            "trainType": "CERCANIAS",
+            "line": {
+                "id": "R2",
+                "name": "R2"
+            },
+            "originStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            },
+            "destinationStation": {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true
+            },
+            "trainAccessible": true,
+            "nextStation": {
+                "id": "72400",
+                "name": "Aeroport",
+                "accessible": true
+            }
+        }
+    ]
+}

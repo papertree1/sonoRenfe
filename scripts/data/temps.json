@@ -1,0 +1,508 @@
+{
+    "real": {
+        "results": [
+            {
+                "id": "71707",
+                "nom": "El Prat de Llobregat",
+                "arribada": "2026-03-24T13:59:44",
+                "sortida": "2026-03-24T14:00:44"
+            },
+            {
+                "id": "71708",
+                "nom": "Bellvitge | Gornal",
+                "arribada": "2026-03-24T13:55:44",
+                "sortida": "2026-03-24T13:55:44"
+            },
+            {
+                "id": "71801",
+                "nom": "Barcelona-Sants",
+                "arribada": "2026-03-24T13:47:44",
+                "sortida": "2026-03-24T13:49:44"
+            },
+            {
+                "id": "71802",
+                "nom": "Barcelona-Passeig de Gràcia",
+                "arribada": "2026-03-24T13:41:44",
+                "sortida": "2026-03-24T13:42:44"
+            },
+            {
+                "id": "72400",
+                "nom": "Aeroport",
+                "arribada": "2026-03-24T14:06:44",
+                "sortida": "2026-03-24T14:06:44"
+            }
+        ]
+    },
+    "teoric": {
+        "items": [
+            {
+                "departsAtOrigin": "13:14:00",
+                "arrivesAtDestination": "14:33:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28434",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "14:07:00",
+                "arrivesAtDestination": "15:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28438",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "14:37:00",
+                "arrivesAtDestination": "15:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28440",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "15:07:00",
+                "arrivesAtDestination": "16:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28442",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "15:37:00",
+                "arrivesAtDestination": "16:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28444",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "16:07:00",
+                "arrivesAtDestination": "17:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28446",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "16:37:00",
+                "arrivesAtDestination": "17:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28448",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "17:07:00",
+                "arrivesAtDestination": "18:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28450",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "17:37:00",
+                "arrivesAtDestination": "18:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28452",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "18:07:00",
+                "arrivesAtDestination": "19:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28454",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "18:37:00",
+                "arrivesAtDestination": "19:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28456",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "19:07:00",
+                "arrivesAtDestination": "20:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28458",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "19:37:00",
+                "arrivesAtDestination": "20:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28460",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "20:07:00",
+                "arrivesAtDestination": "21:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28462",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "20:37:00",
+                "arrivesAtDestination": "21:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28464",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "21:07:00",
+                "arrivesAtDestination": "22:26:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28480",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "21:37:00",
+                "arrivesAtDestination": "22:56:00",
+                "duration": "01:19:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28482",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            },
+            {
+                "departsAtOrigin": "22:08:00",
+                "arrivesAtDestination": "23:26:00",
+                "duration": "01:18:00",
+                "globalAccessibility": true,
+                "steps": [
+                    {
+                        "departsAt": null,
+                        "arrivesAt": null,
+                        "accessible": true,
+                        "train": {
+                            "id": "28484",
+                            "trainType": {
+                                "code": "UNKNOWN",
+                                "description": null
+                            },
+                            "accessible": true
+                        },
+                        "line": {
+                            "id": "R2",
+                            "name": "R2"
+                        },
+                        "station": null
+                    }
+                ]
+            }
+        ]
+    }
+}
