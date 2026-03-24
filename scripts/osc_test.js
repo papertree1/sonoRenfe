@@ -1,26 +1,27 @@
-const osc = require("osc");
+var osc = require("osc");
 
-var oscPort = new osc.WebSocketPort({
-    url: "ws://localhost:8081", // URL to your Web Socket server.
+var udpPort = new osc.UDPPort({
+    // This is where sclang is listening for OSC messages.
+    remoteAddress: "127.0.0.1",
+    remotePort: 57120,
     metadata: true
 });
 
-oscPort.open();
+// Open the socket.
+udpPort.open();
 
-oscPort.on("ready", function () {
-    setInterval(function () {
+// Every second, send an OSC message to SuperCollider
+setInterval(function() {
+    var msg = {
+        address: "/renfe",
+        args: [
+            {
+                type: "f",
+                value: 208
+            },
+        ]
+    };
 
-        oscPort.send({
-            address: "/carrier/frequency",
-            args: [
-                {
-                    type: "f",
-                    value: 440
-                }
-            ]
-        });
-
-        console.log("Message sent via OSC!");
-        
-    }, 3000);
-});
+    //console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
+    udpPort.send(msg);
+}, 1000);
