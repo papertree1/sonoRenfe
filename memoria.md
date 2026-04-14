@@ -13,7 +13,7 @@
 ## 24 de febrer
 - Trobada app Transporta'm, que consulta els trens a la seva propia API (veure links als [Recursos](https://github.com/papertree1/sonoRenfe/blob/main/recursos.md))
 
-## 03 de març
+## 3 de març
 - Hem descobert que als timetables hi ha els ID dels trens de cada línia
 - Hem netejat els resultats dels ID dels trens fent peticions per 1000 IDs i eliminant els que no donen resposta ([app node](./Proves/peticions/routes/index.js))
 - Estem intentant esbrinar com funcionen els temps i dates (renfe caos)
@@ -32,17 +32,26 @@
 - Per a obtenir l'estat del servei, doncs, haurem de comparar les dades d'aquest endpoint amb aquelles de `/timetables`.
 - Hem trobat un altre [recurs](./recursos.md) amb informació a temps real de la localització GPS de tots els trens de Renfe.
 
-## 03 d'abril
+## 31 de març
+- Vacances Setmana Santa
+
+## 7 d'abril
+- Vacances Setmana Santa
+
+## 14 d'abril
+- Hem parlat amb el creador de la app Transporta'm
+- Hem trobat un servei de informació (GTFS-RT) que dona informació dels trens actius, però sembla que no hi ha tota la informació disponible (potser passa com amb els horaris que desapareixen quan el tren arriba a l'estació)
+- Hem planificat els passos que hem de seguir per obtenir els retards:
+    - Obtenir trens actius
+    - Obtenir situació dels trens amb `/trains`
+    - Obtenir horaris teòrics (no sabem com)
+    - Comparar horaris teòrics i reals per obtenir el retard
+
+## 21 d'abril
 - Miau
 
-## 10 d'abril
-- Miau
-
-## 17 d'abril
-- Miau
-
-## 24 d'abril
-- Miau
+## 28 d'abril
+- Pre-presentació
 
 ## 31 d'abril
 - Miau
