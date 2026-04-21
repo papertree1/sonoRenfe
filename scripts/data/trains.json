@@ -1,0 +1,56 @@
+{
+    "requestedAt": "2026-04-21T13:02:54",
+    "train": {
+        "originDateHour": "2026-04-21T12:08:32",
+        "stations": [
+            {
+                "id": "79100",
+                "name": "Granollers Centre",
+                "accessible": true,
+                "arrivalDateHour": "2026-04-21T13:07:34",
+                "departureDateHour": "2026-04-21T13:08:34",
+                "platform": "1"
+            },
+            {
+                "id": "79109",
+                "name": "Les Franqueses-Granollers Nord",
+                "accessible": true,
+                "arrivalDateHour": "2026-04-21T13:11:34",
+                "departureDateHour": "2026-04-21T13:11:34",
+                "platform": "1"
+            },
+            {
+                "id": "79101",
+                "name": "Cardedeu",
+                "accessible": true,
+                "arrivalDateHour": "2026-04-21T13:16:34",
+                "departureDateHour": "2026-04-21T13:16:34",
+                "platform": "1"
+            },
+            {
+                "id": "79102",
+                "name": "Llinars del Vallès",
+                "accessible": false,
+                "arrivalDateHour": "2026-04-21T13:19:34",
+                "departureDateHour": "2026-04-21T13:20:34",
+                "platform": null
+            },
+            {
+                "id": "79103",
+                "name": "Palautordera",
+                "accessible": true,
+                "arrivalDateHour": "2026-04-21T13:25:34",
+                "departureDateHour": "2026-04-21T13:25:34",
+                "platform": null
+            },
+            {
+                "id": "79104",
+                "name": "Sant Celoni",
+                "accessible": true,
+                "arrivalDateHour": "2026-04-21T13:29:34",
+                "departureDateHour": "2026-04-21T13:29:34",
+                "platform": null
+            }
+        ]
+    }
+}
