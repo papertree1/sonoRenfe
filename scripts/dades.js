@@ -22,9 +22,7 @@ r2 = [];
 getTrains();
 fileName = 'data/dades.json';
 
-
 function getTrains() {
-
     console.log("Starting fetches...");
     fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=79104&destinationStationId=72400`) // R2
         .then(response => response.json())
@@ -45,10 +43,10 @@ function getTrains() {
         });
 }
 
-var fetches = [];
+var fetches = []; // TODO: això s'hauria de moure d'aquí perquè es buidi (o no?) abans de cada execució de la funció
+
 async function getTrainInfo() {
     for (let i = 0; i < r2.length; i++) {
-        //console.log(i);
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${r2[i].id}`)
                 .then(response => { return response.json(); })
@@ -60,21 +58,19 @@ async function getTrainInfo() {
         .then(data => {
             for (train of data) {
                 hores = []
+
                 for (station of train.train.stations) {
                     hores.push(dayjs(station.arrivalDateHour));
                 }
-                minTime = dayjs.min(hores);
-                r2[data.indexOf(train)].properaParada = minTime.format('DD/MM HH:mm:ss');
-                //TODO: POSAR NOMS DE LES PARADES
-                //TODO: COMPROVAR QUE LES HORES CORRESPONGUIN AMB ELS TRESN
-            }
-            console.log(r2);
 
+                minTime = dayjs.min(hores);
+                r2[data.indexOf(train)].properaParada = minTime.format('DD/MM HH:mm:ss'); // TODO: canviar per for normal (simplifica sintaxi)
+
+                //TODO: POSAR NOMS DE LES PARADES
+
+                //TODO: COMPROVAR QUE LES HORES CORRESPONGUIN AMB ELS TRENS
+            }
+
+            console.log(r2);
         })
-    // .then(response => {
-    //     fs.writeFile(fileName, JSON.stringify(response), (err) => {
-    //         if (err) throw err;
-    //         console.log(`Results saved to ${fileName}`);
-    //     })
-    // });
 }
