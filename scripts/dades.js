@@ -3,6 +3,7 @@ const fs = require('fs');
 const dayjs = require('dayjs');
 
 var minMax = require("dayjs/plugin/minMax");
+var minMax = require("dayjs/plugin/customParseFormat");
 const { log } = require("console");
 dayjs.extend(minMax);
 
@@ -14,7 +15,7 @@ var udpPort = new osc.UDPPort({
 });
 
 // Open the socket.
-// udpPort.open(); // TODO: open port
+ udpPort.open(); 
 
 // crear un array/json buit que contrindrà la info dels trens
 r2 = [];
@@ -65,7 +66,7 @@ async function getTrainInfo() {
                 for (station of train.train.stations) {
                     hores.push({
                         estacio: station.name,
-                        horaArribada: dayjs(station.arrivalDateHour).format('DD/MM HH:mm:ss')
+                        horaArribada: dayjs(station.arrivalDateHour).format('DD/MM/YYYY HH:mm:ss')
                     })
                 }
 
@@ -78,6 +79,27 @@ async function getTrainInfo() {
             }
 
             console.log(r2);
+            
+            trenProva = r2[0];
+            console.log(trenProva);
+            console.log(dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss'))
+
+            var msg = {
+                address: "/r2",
+                args: [
+                    {
+                        type: "f",
+                        value: dayjs().unix()
+                    },
+                    {
+                        type: "f",
+                        value: dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss').unix()
+                    },
+                ]
+            };
+        
+            console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
+            udpPort.send(msg);
         })
 }
 
