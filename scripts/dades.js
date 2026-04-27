@@ -4,8 +4,6 @@ const dayjs = require('dayjs');
 
 var minMax = require("dayjs/plugin/minMax");
 var minMax = require("dayjs/plugin/customParseFormat");
-const { log } = require("console");
-const { get } = require("http");
 dayjs.extend(minMax);
 
 var udpPort = new osc.UDPPort({
@@ -45,8 +43,6 @@ function getTrains() {
                 })
             }
 
-            // console.log(r2);
-
             getTrainInfo();
         })
         .catch(err => {
@@ -71,7 +67,6 @@ async function getTrainInfo() {
 
     Promise.all(fetches)
         .then(data => {
-            // console.table(data.train.id, data.train.stations)
 
             for (train of data) {
                 hores = []
@@ -80,7 +75,7 @@ async function getTrainInfo() {
                 if (!train.train) {
                     continue;
                 }
-                
+
                 for (station of train.train.stations) {
                     hores.push({
                         estacio: station.name,
@@ -89,18 +84,14 @@ async function getTrainInfo() {
                 }
 
                 properaParada = hores.sort(hora => hora.horaArribada)[0];
-
-                console.log(properaParada);
                 
                 r2[data.indexOf(train)].hora = properaParada.horaArribada;
                 r2[data.indexOf(train)].properaEstacio = properaParada.estacio
             }
 
-            console.log(r2);
             
             trenProva = r2[0];
             console.log(trenProva);
-            console.log(dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss'))
 
             ara = dayjs().unix()
             horaTren = dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss').unix()
