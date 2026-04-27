@@ -72,7 +72,7 @@ async function getTrainInfo() {
                 hores = []
                 
                 // TODO: gestionar què passa quan la RENFE ens retorna una resposta vàlida però sense dades
-                if (!train.train || !train) {
+                if (!train || !train.train) {
                     continue;
                 }
 
