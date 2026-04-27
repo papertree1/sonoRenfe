@@ -5,6 +5,7 @@ const dayjs = require('dayjs');
 var minMax = require("dayjs/plugin/minMax");
 var minMax = require("dayjs/plugin/customParseFormat");
 const { log } = require("console");
+const { get } = require("http");
 dayjs.extend(minMax);
 
 var udpPort = new osc.UDPPort({
@@ -18,14 +19,17 @@ var udpPort = new osc.UDPPort({
  udpPort.open(); 
 
 // crear un array/json buit que contrindrà la info dels trens
+// TODO: fer un programet que agafi la R2 d'anada i tornada
+// TODO: fer un programet per poder seleccionar la línia que es vol monitoritzar
 r2 = [];
 
-// obtenir els trens actius d'una línia concreta (R2) i guardar-los a l'array
-getTrains();
-fileName = 'data/dades.json';
+// obtenir els trens actius d'una línia concreta (R2) i enviar-los per OSC
+setInterval(() => {
+    getTrains();
+}, 60000);
 
 function getTrains() {
-    console.log("Starting fetches...");
+    console.log("Començant fetches...");
     fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=79104&destinationStationId=72400`) // R2
         .then(response => response.json())
         .then(data => {
@@ -42,12 +46,19 @@ function getTrains() {
             // console.log(r2);
 
             getTrainInfo();
+        })
+        .catch(err => {
+            console.log("Tornant a fer els fetches...");
+            
+            getTrains();
         });
 }
 
-var fetches = []; // TODO: això s'hauria de moure d'aquí perquè es buidi (o no?) abans de cada execució de la funció
 
 async function getTrainInfo() {
+    var fetches = [];
+
+
     for (let i = 0; i < r2.length; i++) {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${r2[i].id}`)
