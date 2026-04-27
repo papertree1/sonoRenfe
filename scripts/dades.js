@@ -26,7 +26,7 @@ getTrains();
 
 setInterval(() => {
     getTrains();
-}, 60000);
+}, 12345);
 
 function getTrains() {
     console.log("Començant fetches...");
