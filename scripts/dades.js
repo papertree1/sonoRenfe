@@ -24,6 +24,8 @@ var udpPort = new osc.UDPPort({
 r2 = [];
 
 // obtenir els trens actius d'una línia concreta (R2) i enviar-los per OSC
+getTrains();
+
 setInterval(() => {
     getTrains();
 }, 60000);
