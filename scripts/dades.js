@@ -3,6 +3,7 @@ const fs = require('fs');
 const dayjs = require('dayjs');
 
 var minMax = require("dayjs/plugin/minMax");
+const { log } = require("console");
 dayjs.extend(minMax);
 
 var udpPort = new osc.UDPPort({
@@ -13,7 +14,7 @@ var udpPort = new osc.UDPPort({
 });
 
 // Open the socket.
-udpPort.open();
+// udpPort.open(); // TODO: open port
 
 // crear un array/json buit que contrindrà la info dels trens
 r2 = [];
@@ -49,28 +50,34 @@ async function getTrainInfo() {
     for (let i = 0; i < r2.length; i++) {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${r2[i].id}`)
-                .then(response => { return response.json(); })
-                .catch(err => { return console.log(err) })
+                .then(response => response.json())
+                .catch(err => console.log(err))
         );
     }
 
     Promise.all(fetches)
         .then(data => {
+            // console.table(data.train.id, data.train.stations)
+
             for (train of data) {
                 hores = []
-
+                
                 for (station of train.train.stations) {
-                    hores.push(dayjs(station.arrivalDateHour));
+                    hores.push({
+                        estacio: station.name,
+                        horaArribada: dayjs(station.arrivalDateHour).format('DD/MM HH:mm:ss')
+                    })
                 }
 
-                minTime = dayjs.min(hores);
-                r2[data.indexOf(train)].properaParada = minTime.format('DD/MM HH:mm:ss'); // TODO: canviar per for normal (simplifica sintaxi)
+                properaParada = hores.sort(hora => hora.horaArribada)[0];
 
-                //TODO: POSAR NOMS DE LES PARADES
-
-                //TODO: COMPROVAR QUE LES HORES CORRESPONGUIN AMB ELS TRENS
+                console.log(properaParada);
+                
+                r2[data.indexOf(train)].hora = properaParada.horaArribada;
+                r2[data.indexOf(train)].properaEstacio = properaParada.estacio
             }
 
             console.log(r2);
         })
 }
+
