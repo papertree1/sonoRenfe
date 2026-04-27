@@ -76,6 +76,11 @@ async function getTrainInfo() {
             for (train of data) {
                 hores = []
                 
+                // TODO: gestionar què passa quan la RENFE ens retorna una resposta vàlida però sense dades
+                if (!train.train) {
+                    continue;
+                }
+                
                 for (station of train.train.stations) {
                     hores.push({
                         estacio: station.name,
