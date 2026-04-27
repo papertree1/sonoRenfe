@@ -84,22 +84,26 @@ async function getTrainInfo() {
             console.log(trenProva);
             console.log(dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss'))
 
+            ara = dayjs().unix()
+            horaTren = dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss').unix()
+
             var msg = {
                 address: "/r2",
                 args: [
                     {
-                        type: "f",
-                        value: dayjs().unix()
+                        type: "i",
+                        value: ara
                     },
                     {
-                        type: "f",
-                        value: dayjs(trenProva.hora, 'DD/MM/YYYY HH:mm:ss').unix()
+                        type: "i",
+                        value: horaTren
                     },
                 ]
             };
         
-            console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
+            
             udpPort.send(msg);
+            console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
         })
 }
 
