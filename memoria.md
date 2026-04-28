@@ -48,7 +48,10 @@
     - Comparar horaris teòrics i reals per obtenir el retard
 
 ## 21 d'abril
-- Miau
+- Hem aconseguit els **horaris teòrics** de tota la xarxa Renfe Espanya d'un fitxer CSV, i n'hem extret només els de Rodalies
+    - Es poden trobar amb format JSON [aquí](./scripts/data/horaris_teorics_format.json)
+- Començant amb una sola línia (R2), hem aconseguit obtenir els trens actius i les seves dades de manera asíncrona. D'aquesta manera, esperem a que l'API retorni totes les peticions abans de tractar-les
+- Hem fet la connexió amb Max per OSC. De moment, enviem només l'hora actual i l'hora de la següent parada del tren i hem fet una demo a Max que fa sonar notes en funció del temps que queda per l'arribada. Hem modificat el programa de JavaScript perquè faci les peticions de manera recurrent de manera que tota l'estona enviem dades noves al patch de Max
 
 ## 28 d'abril
 - Pre-presentació

@@ -18,7 +18,7 @@ var udpPort = new osc.UDPPort({
 
 // crear un array/json buit que contrindrà la info dels trens
 // TODO: fer un programet que agafi la R2 d'anada i tornada
-// TODO: fer un programet per poder seleccionar la línia que es vol monitoritzar
+// TODO: fer un programet per poder seleccionar la línia que es vol monitoritzar, potser control·lable per OSC
 r2 = [];
 
 // obtenir els trens actius d'una línia concreta (R2) i enviar-los per OSC
@@ -56,7 +56,6 @@ function getTrains() {
 async function getTrainInfo() {
     var fetches = [];
 
-
     for (let i = 0; i < r2.length; i++) {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${r2[i].id}`)
@@ -90,7 +89,7 @@ async function getTrainInfo() {
             }
 
             
-            trenProva = r2[0];
+            trenProva = r2[0]; //TODO: FER TOTS ELS TRENS
             console.log(trenProva);
 
             ara = dayjs().unix()
