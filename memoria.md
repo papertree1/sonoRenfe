@@ -57,7 +57,13 @@
 - Pre-presentació
 
 ## 31 d'abril
-- Miau
+- Hem comprovat que els horaris teòrics no serveixen de gaire perquè la pròpia Renfe no programa els trens per aquelles hores (l'horari al que assignen els trens a la primera parada de la línia ja no es correspon)
+- Hem decidit guardar aquests horaris "assignats" i calcular nosaltres el retard a mesura que es produeixi
+- Hem de netejar l'arxiu R2 de dades superflues (accessibilitat, andana, hora de sortida) per poder guardar aquestes dades seguint el següent procediment:
+    - Guardar totes les dades el primer cop que fem una petició
+    - Anar actualitzant en un altre camp les dades per poder-ne detectar les discrepàncies
+    - Calcular el retard quan n'hi hagi
+    - Enviar aquestes dades al OSC
 
 ## 07 de maig
 - Miau

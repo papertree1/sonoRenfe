@@ -34,6 +34,7 @@ function getTrains() {
         .then(response => response.json())
         .then(data => {
             results = data.result;
+            r2 = []; // reiniciem l'array de trens per omplir-lo amb la nova info
 
             results = results.items.map(item => item.steps[0].train.id)
 
@@ -66,7 +67,6 @@ async function getTrainInfo() {
 
     Promise.all(fetches)
         .then(data => {
-
             for (train of data) {
                 hores = []
                 
@@ -78,6 +78,7 @@ async function getTrainInfo() {
                 for (station of train.train.stations) {
                     hores.push({
                         estacio: station.name,
+                        estacioId: station.id,
                         horaArribada: dayjs(station.arrivalDateHour).format('DD/MM/YYYY HH:mm:ss')
                     })
                 }
@@ -86,10 +87,11 @@ async function getTrainInfo() {
                 
                 r2[data.indexOf(train)].hora = properaParada.horaArribada;
                 r2[data.indexOf(train)].properaEstacio = properaParada.estacio
+                r2[data.indexOf(train)].properaEstacioId = properaParada.estacioId
             }
 
-            
-            trenProva = r2[0]; //TODO: FER TOTS ELS TRENS
+            // TODO: FER TOTS ELS TRENS
+            trenProva = r2[0]; 
             console.log(trenProva);
 
             ara = dayjs().unix()
@@ -109,9 +111,20 @@ async function getTrainInfo() {
                 ]
             };
         
+            /*  TODO: missatge a enviar per OSC
+
+                /r2/id {
+                    ara: UnixTimestamp,
+                    horaSortida: UnixTimestamp,
+                    horaArribada: UnixTimestamp,
+                    retard: UnixTimestamp
+                }
+            */
             
             udpPort.send(msg);
             console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
+            
+            console.table(r2);
+            
         })
 }
-
