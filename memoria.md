@@ -33,10 +33,10 @@
 - Hem trobat un altre [recurs](./recursos.md) amb informació a temps real de la localització GPS de tots els trens de Renfe.
 
 ## 31 de març
-- Vacances Setmana Santa
+- *Vacances Setmana Santa*
 
 ## 7 d'abril
-- Vacances Setmana Santa
+- *Vacances Setmana Santa*
 
 ## 14 d'abril
 - Hem parlat amb el creador de la app Transporta'm
@@ -54,9 +54,9 @@
 - Hem fet la connexió amb Max per OSC. De moment, enviem només l'hora actual i l'hora de la següent parada del tren i hem fet una demo a Max que fa sonar notes en funció del temps que queda per l'arribada. Hem modificat el programa de JavaScript perquè faci les peticions de manera recurrent de manera que tota l'estona enviem dades noves al patch de Max
 
 ## 28 d'abril
-- Pre-presentació
+- *Pre-presentació*
 
-## 31 d'abril
+## 5 de maig
 - Hem comprovat que els horaris teòrics no serveixen de gaire perquè la pròpia Renfe no programa els trens per aquelles hores (l'horari al que assignen els trens a la primera parada de la línia ja no es correspon)
 - Hem decidit guardar aquests horaris "assignats" i calcular nosaltres el retard a mesura que es produeixi
 - Hem de netejar l'arxiu R2 de dades superflues (accessibilitat, andana, hora de sortida) per poder guardar aquestes dades seguint el següent procediment:
@@ -65,20 +65,63 @@
     - Calcular el retard quan n'hi hagi
     - Enviar aquestes dades al OSC
 
-## 07 de maig
+## 12 de maig
+- *Adrià a Hèlsinki (Erasmus+, electroacustica)*
+- Procediment d'**obtenció de dades** actualitzat:
+    - Primera petició:
+        - Guardar totes les dades dels trens de la línia (anada i tornada) amb els seus ID
+        - Guardar la propera parada (ID + nom) i l'hora d'arribada prevista
+            ``` javascript
+            linia = {
+                anada: [
+                    {
+                        id: 54321,
+                        hora: 123456789, // guardar en millis per simplificar càlculs(?)
+                        properaEstacio: "Sant Celoni",
+                        properaEstacioId: 12345,
+                        retard: 0
+                    }
+                ],
+                tornada: [
+                    ...
+                ]
+            }
+            ```
+    - Següents peticions:
+        - Si l'hora ha canviat, actualitzar-la
+            - Calcular el retard afegit i guardar-lo en una nova propietat
+            - **MISSATGE OSC**: el tren va amb retard, enviar-lo
+        - Si la parada del tren ha desaparegut, ja ha sortit
+            - Calcular amb el temps actual si ha arribat tard per afegir-ho al retard (opcional?)
+            - **MISSATGE OSC**: tren ha arribat/sortit, per triggerejar so de tren/portes/gent/megafonia
+            - Si era la última parada, eliminar el tren (?)
+        - Si no ha canviat, no fer res
+
+- Per poder-ho fer **interactiu**, selecció de línies, etc necessitem:
+    - Array/JSON amb cada línia i les seves parades d'origen i destí
+    - Fer la primera petició amb parada d'origen i destí del dret i del revés
+        ``` javascript
+        fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=79104&destinationStationId=72400`) // R2
+        ```
+    - Crear un array genèric per la línia seleccionada amb dos sub-arrays per l'anada i la tornada
+        ``` javascript
+        linia = { 
+            anada: [],
+            tornada: []
+        };
+        ```
+
+## 19 de maig
 - Miau
 
-## 14 de maig
-- Miau
-
-## 21 de maig
+## 26 de maig
 - Miau
 
 ## 28 de maig
 - Miau
 
-## 05 de juny
+## 2 de juny
 - Miau
 
-## 12 de juny
+## 9 de juny
 - Miau

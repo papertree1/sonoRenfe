@@ -1,3 +1,5 @@
+// Aquest és el programa pseudo-definitiu (back-end)
+
 const osc = require("osc");
 const fs = require('fs');
 const dayjs = require('dayjs');
@@ -14,11 +16,12 @@ var udpPort = new osc.UDPPort({
 });
 
 // Open the socket.
- udpPort.open(); 
+udpPort.open(); 
 
-// crear un array/json buit que contrindrà la info dels trens
 // TODO: fer un programet que agafi la R2 d'anada i tornada
 // TODO: fer un programet per poder seleccionar la línia que es vol monitoritzar, potser control·lable per OSC
+
+// array on guardarem els trens de la R2 i la seva info 
 r2 = [];
 
 // obtenir els trens actius d'una línia concreta (R2) i enviar-los per OSC
@@ -90,7 +93,7 @@ async function getTrainInfo() {
                 r2[data.indexOf(train)].properaEstacioId = properaParada.estacioId
             }
 
-            // TODO: FER TOTS ELS TRENS
+            // TODO: FER TOTS ELS TRENS (fet?)
             trenProva = r2[0]; 
             console.log(trenProva);
 
