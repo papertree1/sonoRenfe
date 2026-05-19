@@ -112,7 +112,14 @@
         ```
 
 ## 19 de maig
-- Miau
+- Actualització de l'obtenció de dades, seguint la guia de la setmana passada
+    - Generalització del fetch per a poder incorporar altres línies
+    - Incorporació d'anades i tornades
+    - Preparació per al càlcul dels retards
+- Per la setmana que ve, caldrà:
+    - Fer comprovació de canvis als trens a partir del segon fetch
+    - Càlcular els retards
+    - Començar a crear la logística de la implementació dins de Max
 
 ## 26 de maig
 - Miau
