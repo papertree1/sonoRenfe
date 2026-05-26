@@ -141,14 +141,12 @@ async function getTrainsInfo() {
                 hores = []
                 retard = 0
 
-                //console.log(trenNou)
                 // TODO: gestionar què passa quan la RENFE ens retorna una resposta vàlida però sense dades
                 if (!trenNou || !trenNou.train) {
                     continue;
                 }
 
                 for (station of trenNou.train.stations) {
-                    console.log(station)
                     hores.push({
                         estacio: station.name,
                         estacioId: station.id,
@@ -157,13 +155,14 @@ async function getTrainsInfo() {
                 }
 
                 properaParada = hores.sort(hora => hora.horaArribada)[0];
-                console.log(hores)
 
-                // console.log(trenNou)
                 //TODO: comprovar si el tren està a l'array trensGuardats[]
-                trainId = trensGuardats[trensNous.indexOf(trenNou)].id
-                // console.log(trainId)
-                // console.log(trensGuardats.includes(trainId)) // ??? també pot estar fallant aquí
+                trainId = 0
+                
+                for (trenGuardat of trensGuardats){
+                    if (trenGuardat.hora == properaParada) trainId = trenGuardat.id
+                }
+
                 for (trenGuardat of trensGuardats){
                     if (trenGuardat.id == trainId){
                         if(trenGuardat.hora){
@@ -176,42 +175,37 @@ async function getTrainsInfo() {
                 trensGuardats[trensNous.indexOf(trenNou)].hora = properaParada.horaArribada
                 trensGuardats[trensNous.indexOf(trenNou)].properaEstacio = properaParada.estacio
                 trensGuardats[trensNous.indexOf(trenNou)].properaEstacioId = properaParada.estacioId
-                // trensGuardats[trensNous.indexOf(trenNou)].retard = properaParada.horaArribada - dayjs().unix() //TODO diu l'omar que això no és un retard, discutible
-                trensGuardats[trensNous.indexOf(trenNou)].retard = retard //TODO diu l'omar que això no és un retard, discutible
+                trensGuardats[trensNous.indexOf(trenNou)].retard = retard
             }
 
-            // TODO: FER TOTS ELS TRENS (fet?)
-            trenProva = trensGuardats[0];
-            //console.log(trenProva);
+            // ara = dayjs().unix()
+            // horaTren = trenProva.hora
+            // retard = trenProva.retard
 
-            ara = dayjs().unix()
-            horaTren = trenProva.hora
-            retard = trenProva.retard
-
-            var msg = {
-                address: "/r2",
-                args: [
-                    {
-                        type: "i",
-                        value: ara
-                    },
-                    {
-                        type: "i",
-                        value: horaTren
-                    },
-                    {
-                        type: "i",
-                        value: retard
-                    }
-                ]
-            };
+            // var msg = {
+            //     address: "/r2",
+            //     args: [
+            //         {
+            //             type: "i",
+            //             value: ara
+            //         },
+            //         {
+            //             type: "i",
+            //             value: horaTren
+            //         },
+            //         {
+            //             type: "i",
+            //             value: retard
+            //         }
+            //     ]
+            // };
 
             // TODO: missatge a enviar per OSC
 
-            udpPort.send(msg);
+            // udpPort.send(msg);
             //console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
 
+            trensGuardats.sort((trena, trenb) => trena.id - trenb.id);
             console.table(trensGuardats);
-
         })
 }
