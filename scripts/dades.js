@@ -52,15 +52,68 @@ linies = {
     }
 }
 
-var udpPort = new osc.UDPPort({
+liniaSeleccionada = "R4"
+seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
+canviDeLinia = false
+
+var sendPort = new osc.UDPPort({
     // This is where sclang is listening for OSC messages.
     remoteAddress: "127.0.0.1",
     remotePort: 57120,
     metadata: true
 });
 
+var getIPAddresses = function () {
+    var os = require("os"),
+        interfaces = os.networkInterfaces(),
+        ipAddresses = [];
+
+    for (var deviceName in interfaces) {
+        var addresses = interfaces[deviceName];
+        for (var i = 0; i < addresses.length; i++) {
+            var addressInfo = addresses[i];
+            if (addressInfo.family === "IPv4" && !addressInfo.internal) {
+                ipAddresses.push(addressInfo.address);
+            }
+        }
+    }
+
+    return ipAddresses;
+};
+
+var receivePort = new osc.UDPPort({
+    localAddress: "0.0.0.0",
+    localPort: 57125
+});
+
+receivePort.on("ready", function () {
+    var ipAddresses = getIPAddresses();
+
+    console.log("Listening for OSC over UDP.");
+    ipAddresses.forEach(function (address) {
+        console.log(" Host:", address + ", Port:", receivePort.options.localPort);
+    });
+});
+
+receivePort.on("message", function (oscMessage) {
+    console.log(oscMessage);
+    prefix = oscMessage.address
+    args = oscMessage.args
+    
+    if(prefix == "/canviLinia"){
+        seguentLinia = args[0]
+        canviDeLinia = true
+        console.log(`Preparant el canvi a la ${seguentLinia}...`);
+    }
+});
+
+receivePort.on("error", function (err) {
+    console.log(err);
+});
+
 // Open the socket.
-udpPort.open();
+receivePort.open();
+sendPort.open();
 
 /** 
  * Array on guardarem els trens i la seva info
@@ -80,11 +133,11 @@ trensGuardats = [];
 //TODO: Rebre per OSC la línia que volem
 
 
-getTrainsId("R4");
+ getTrainsId(liniaSeleccionada);
 
 // Fem request a l'API cada 12345 segons
 setInterval(() => {
-    getTrainsId("R4");
+    getTrainsId(liniaSeleccionada);
 }, 12345);
 
 
@@ -191,22 +244,24 @@ async function getTrainsInfo() {
 
                 trainId = 0
                 // Comprovem si el trenNou ja està a l'array trensGuardats[]
-                for (trenGuardat of trensGuardats){
-                    if (Math.abs(trenGuardat.hora - properaParada.horaArribada) < 60){ // Ho hem de comprovar amb l'hora, ja que aquí no tenim l'id del tren
-                        // ! No sempre entra aquí per tots els trens, tot i que estiguin repetits
-                        trainId = trenGuardat.id
-                        trensTrobats++
+                if(properaParada != undefined){ // ? Hi ha d'haver una millor manera de fer això
+                    for (trenGuardat of trensGuardats){
+                        if (Math.abs(trenGuardat.hora - properaParada.horaArribada) < 60){ // Ho hem de comprovar amb l'hora, ja que aquí no tenim l'id del tren
+                            // ! No sempre entra aquí per tots els trens, tot i que estiguin repetits
+                            trainId = trenGuardat.id
+                            trensTrobats++
 
-                        if(trenGuardat.hora != undefined){
-                            retard = trenGuardat.hora - properaParada.horaArribada
-                            if(retard > 0) {
-                                // Aquest tren va amb retard
-                                // * OSC MESSAGE
-                            }
-                            if(trenGuardat.properaEstacio != properaParada.estacio){
-                                // Ha passat a la següent estació // ???
-                                // * OSC MESSAGE
-                                log(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
+                            if(trenGuardat.hora != undefined){
+                                retard = trenGuardat.hora - properaParada.horaArribada
+                                if(retard > 0) {
+                                    // Aquest tren va amb retard
+                                    // * OSC MESSAGE
+                                }
+                                if(trenGuardat.properaEstacio != properaParada.estacio){
+                                    // Ha passat a la següent estació // ??! No va
+                                    // * OSC MESSAGE
+                                    log(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
+                                }
                             }
                         }
                     }
@@ -250,13 +305,20 @@ async function getTrainsInfo() {
 
             // TODO: missatge a enviar per OSC
 
-            // udpPort.send(msg);
-            //console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
+            // sendPort.send(msg);
+            //console.log("Sending message", msg.address, msg.args, "to", sendPort.options.remoteAddress + ":" + sendPort.options.remotePort);
 
             trensGuardats.sort((trena, trenb) => trena.id - trenb.id);
             log('\n')
             log(dayjs().format("HH:mm:ss"))
             console.table(trensGuardats);
             log(`Trens repetits: ${trensTrobats}`)
+
+            if(canviDeLinia){
+                trensGuardats = []
+                liniaSeleccionada = seguentLinia
+                console.log(`Monotoritzant la ${liniaSeleccionada}`)
+                canviDeLinia = false
+            }
         })
 }
