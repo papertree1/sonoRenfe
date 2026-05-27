@@ -102,8 +102,10 @@ receivePort.on("message", function (oscMessage) {
     
     if(prefix == "/canviLinia"){
         seguentLinia = args[0]
-        canviDeLinia = true
-        console.log(`Preparant el canvi a la ${seguentLinia}...`);
+        if (seguentLinia != liniaSeleccionada){
+            canviDeLinia = true
+            sendInfoMessage(`Preparant el canvi a la ${seguentLinia}...`);
+        }
     }
 });
 
@@ -191,7 +193,7 @@ function getTrainsId(linia) {
     Promise.all(fetches)
         .then(getTrainsInfo)
         .catch(err => {
-            console.log("Tornant a fer els fetches...");
+            sendInfoMessage("Tornant a fer els fetches...");
             getTrainsId(linia);
         })
 
@@ -260,7 +262,7 @@ async function getTrainsInfo() {
                                 if(trenGuardat.properaEstacio != properaParada.estacio){
                                     // Ha passat a la següent estació // ??! No va
                                     // * OSC MESSAGE
-                                    log(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
+                                    sendInfoMessage(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
                                 }
                             }
                         }
@@ -317,8 +319,24 @@ async function getTrainsInfo() {
             if(canviDeLinia){
                 trensGuardats = []
                 liniaSeleccionada = seguentLinia
-                console.log(`Monotoritzant la ${liniaSeleccionada}`)
+                sendInfoMessage(`Monotoritzant la ${liniaSeleccionada}`)
                 canviDeLinia = false
             }
         })
+}
+
+function sendInfoMessage(message){
+    console.log(message)
+
+    var msg = {
+        address: "/info",
+        args: [
+            {
+                type: "s",
+                value: message
+            }
+        ]
+    };
+
+    sendPort.send(msg);
 }
