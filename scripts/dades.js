@@ -6,6 +6,7 @@ const dayjs = require('dayjs');
 
 var minMax = require("dayjs/plugin/minMax");
 var minMax = require("dayjs/plugin/customParseFormat");
+const { log } = require("console");
 dayjs.extend(minMax);
 
 linies = {
@@ -61,28 +62,43 @@ var udpPort = new osc.UDPPort({
 // Open the socket.
 udpPort.open();
 
-// TODO: fer un programet que agafi la R2 d'anada i tornada
-// TODO: fer un programet per poder seleccionar la línia que es vol monitoritzar, potser control·lable per OSC
+/** 
+ * Array on guardarem els trens i la seva info
+ * [
+ *    {
+ *       id
+ *       hora
+ *       properaEstacio
+ *       properaEstacioId
+ *       retard (s)
+ *     },
+ * ]
+ */
+trensGuardats = [];
 
-// array on guardarem els trens de la R2 i la seva info 
-trensGuardats = []; //TODO Canviar el nom
+// Obtenir els trens actius d'una línia concreta i enviar-los per OSC
+//TODO: Rebre per OSC la línia que volem
 
-// obtenir els trens actius d'una línia concreta (R2) i enviar-los per OSC
-//TODO Rebre per OSC la línia que volem
-getTrainsId("R2");
 
+getTrainsId("R4");
+
+// Fem request a l'API cada 12345 segons
 setInterval(() => {
-    getTrainsId("R2");
+    getTrainsId("R4");
 }, 12345);
 
 
+/**
+ * Col·leciona les IDs de tots els trens actius en aquest moment de la línia seleccionada
+ */
 function getTrainsId(linia) {
-    trensGuardats = []
-
-    console.log("Començant fetches...");
+    console.log("Començant fetches...")
     var fetches = []
 
-    fetches.push( //ANADES
+    // // trensGuardats = []
+
+    // ANADES
+    fetches.push(
         fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=${linies[linia].origen}&destinationStationId=${linies[linia].desti}`)
         .then(res => res.json())
         .then(data => {
@@ -91,13 +107,17 @@ function getTrainsId(linia) {
             results = results.items.map(item => item.steps[0].train.id)
 
             for (train of results) {
-                trensGuardats.push({
-                    id: train
-                })
+                if(!trensGuardats.some(el => el.id == train)){ // Comprovar que el tren no estigui ja a l'array
+                    trensGuardats.push({
+                        id: train
+                    })
+                }
             }
         })
     )
-    fetches.push( // TORNADES
+
+    // TORNADES
+    fetches.push(
         fetch(`https://serveisgrs.rodalies.gencat.cat/api/timetables?originStationId=${linies[linia].desti}&destinationStationId=${linies[linia].origen}`)
         .then(res => res.json())
         .then(data => {
@@ -106,9 +126,11 @@ function getTrainsId(linia) {
             results = results.items.map(item => item.steps[0].train.id)
 
             for (train of results) {
-                trensGuardats.push({
-                    id: train
-                })
+                if(!trensGuardats.some(el => el.id == train)){ // Comprovar que el tren no estigui ja a l'array
+                    trensGuardats.push({
+                        id: train
+                    })
+                }
             }
         })
     )
@@ -123,9 +145,17 @@ function getTrainsId(linia) {
 }
 
 
+/**
+ * Col·lecciona la informació de cada tren que està actiu i 
+ * emmagatzema a l'array trensGuardats[]
+ * {
+ *      
+ * }
+ */
 async function getTrainsInfo() {
     var fetches = [];
 
+    // Fer fetch de les dades de tots els trens.
     for (let i = 0; i < trensGuardats.length; i++) {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${trensGuardats[i].id}`)
@@ -136,6 +166,7 @@ async function getTrainsInfo() {
 
     Promise.all(fetches)
         .then(trensNous => {
+            trensTrobats = 0
 
             for (trenNou of trensNous) {
                 hores = []
@@ -146,6 +177,7 @@ async function getTrainsInfo() {
                     continue;
                 }
 
+                // Aconseguir l'hora de totes les parades que farà el tren
                 for (station of trenNou.train.stations) {
                     hores.push({
                         estacio: station.name,
@@ -154,29 +186,45 @@ async function getTrainsInfo() {
                     })
                 }
 
+                // Només ens interessa la següent parada
                 properaParada = hores.sort(hora => hora.horaArribada)[0];
 
-                //TODO: comprovar si el tren està a l'array trensGuardats[]
                 trainId = 0
-                
+                // Comprovem si el trenNou ja està a l'array trensGuardats[]
                 for (trenGuardat of trensGuardats){
-                    if (trenGuardat.hora == properaParada) trainId = trenGuardat.id
-                }
+                    if (Math.abs(trenGuardat.hora - properaParada.horaArribada) < 60){ // Ho hem de comprovar amb l'hora, ja que aquí no tenim l'id del tren
+                        // ! No sempre entra aquí per tots els trens, tot i que estiguin repetits
+                        trainId = trenGuardat.id
+                        trensTrobats++
 
-                for (trenGuardat of trensGuardats){
-                    if (trenGuardat.id == trainId){
-                        if(trenGuardat.hora){
-                            retard += trenGuardat.hora - properaParada.horaArribada
-                            if(retard > 0) console.log("RETARD");
+                        if(trenGuardat.hora != undefined){
+                            retard = trenGuardat.hora - properaParada.horaArribada
+                            if(retard > 0) {
+                                // Aquest tren va amb retard
+                                // * OSC MESSAGE
+                            }
+                            if(trenGuardat.properaEstacio != properaParada.estacio){
+                                // Ha passat a la següent estació // ???
+                                // * OSC MESSAGE
+                                log(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
+                            }
                         }
                     }
                 }
 
-                trensGuardats[trensNous.indexOf(trenNou)].hora = properaParada.horaArribada
-                trensGuardats[trensNous.indexOf(trenNou)].properaEstacio = properaParada.estacio
-                trensGuardats[trensNous.indexOf(trenNou)].properaEstacioId = properaParada.estacioId
-                trensGuardats[trensNous.indexOf(trenNou)].retard = retard
+                // Escriure les noves dades a trensGuardats[]
+                try {
+                    trensGuardats[trensNous.indexOf(trenNou)].hora = properaParada.horaArribada
+                    trensGuardats[trensNous.indexOf(trenNou)].properaEstacio = properaParada.estacio
+                    trensGuardats[trensNous.indexOf(trenNou)].properaEstacioId = properaParada.estacioId
+                    trensGuardats[trensNous.indexOf(trenNou)].retard = isNaN(trensGuardats[trensNous.indexOf(trenNou)].retard) ? retard : trensGuardats[trensNous.indexOf(trenNou)].retard + retard //Acumulació del retard
+                } catch (e) {
+                    // log(trenNou)
+                    // log(e)
+                }
+                
             }
+
 
             // ara = dayjs().unix()
             // horaTren = trenProva.hora
@@ -206,6 +254,9 @@ async function getTrainsInfo() {
             //console.log("Sending message", msg.address, msg.args, "to", udpPort.options.remoteAddress + ":" + udpPort.options.remotePort);
 
             trensGuardats.sort((trena, trenb) => trena.id - trenb.id);
+            log('\n')
+            log(dayjs().format("HH:mm:ss"))
             console.table(trensGuardats);
+            log(`Trens repetits: ${trensTrobats}`)
         })
 }
