@@ -262,6 +262,7 @@ async function getTrainsInfo() {
                                 if(trenGuardat.properaEstacio != properaParada.estacio){
                                     // Ha passat a la següent estació // ??! No va
                                     // * OSC MESSAGE
+                                    // TODO: Resetejar el retard (?)
                                     sendInfoMessage(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
                                 }
                             }
