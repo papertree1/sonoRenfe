@@ -212,6 +212,12 @@ async function getTrainsInfo() {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${trensGuardats[i].id}`)
                 .then(response => response.json())
+                .then(data => {
+                    return {
+                        id: trensGuardats[i].id,
+                        train: data.train
+                    }
+                })
                 .catch(err => console.log(err))
         );
     }
@@ -244,8 +250,7 @@ async function getTrainsInfo() {
                 // Comprovem si el trenNou ja està a l'array trensGuardats[]
                 if(properaParada != undefined){ // ? Hi ha d'haver una millor manera de fer això
                     for (trenGuardat of trensGuardats){
-                        if (Math.abs(trenGuardat.hora - properaParada.horaArribada) < 60){ // Ho hem de comprovar amb l'hora, ja que aquí no tenim l'id del tren
-                            // ! No sempre entra aquí per tots els trens, tot i que estiguin repetits
+                        if (trenNou.id == trenGuardat.id){
                             trainId = trenGuardat.id
                             trensTrobats++
 
@@ -341,3 +346,4 @@ function sendInfoMessage(message){
 
     sendPort.send(msg);
 }
+
