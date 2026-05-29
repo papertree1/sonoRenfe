@@ -198,7 +198,7 @@ function getTrainsId(linia) {
 
             fetchFailed ++
             if (fetchFailed > 20) {
-                console.log("Massa fetchos, m'he agobiat :(")
+                sendInfoMessage("Massa fetchos, m'he agobiat :(")
                 sendOSCTrigger("error")
                 setTimeout(() => getTrainsId(linia), 30000)
             } else getTrainsId(linia)
@@ -262,6 +262,7 @@ async function getTrainsInfo() {
 
                             if(trenGuardat.hora != undefined){
                                 retard = trenGuardat.hora - properaParada.horaArribada
+                                if (retard < -3600) retard = trenGuardat.retard
                                 if(retard > 0) {
                                     // Aquest tren va amb retard
                                     sendOSCTrigger("retard")
