@@ -56,7 +56,6 @@ liniaSeleccionada = "R4"
 seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
 canviDeLinia = false
 
-
 //Setup d'OSC
 var sendPort = new osc.UDPPort({
     // This is where sclang is listening for OSC messages.
@@ -119,18 +118,17 @@ receivePort.on("error", function (err) {
 receivePort.open();
 sendPort.open();
 
-
 /** 
- * Array on guardarem els trens i la seva info
- * [
- *    {
- *       id
- *       hora
- *       properaEstacio
- *       properaEstacioId
- *       retard (s)
- *     },
- * ]
+ *       Array on guardarem els trens i la seva info
+ *       [
+ *          {
+ *             id
+ *             hora
+ *             properaEstacio
+ *             properaEstacioId
+ *             retard (s)
+ *           },
+ *       ]
  */
 trensGuardats = [];
 fetchFailed = 0
@@ -144,14 +142,11 @@ setInterval(() => {
 }, 12345);
 
 
-/**
- * Col·leciona les IDs de tots els trens actius en aquest moment de la línia seleccionada
- */
+// Col·leciona les IDs de tots els trens actius en aquest moment de la línia seleccionada
+
 function getTrainsId(linia) {
     console.log("Començant fetches...")
     var fetches = []
-
-    // // trensGuardats = []
 
     // ANADES
     fetches.push(
@@ -205,10 +200,9 @@ function getTrainsId(linia) {
         })
 }
 
-/**
- * Col·lecciona la informació de cada tren que està actiu i 
- * emmagatzema a l'array trensGuardats[]
- */
+
+// Col·lecciona la informació de cada tren que està actiu i emmagatzema a l'array trensGuardats[]
+
 async function getTrainsInfo() {
     var fetches = [];
     fetchFailed = 0
@@ -310,9 +304,9 @@ async function getTrainsInfo() {
         })
 }
 
-/**
- * Envia un missatge d'informació per OSC i a la consola
- */
+
+// Envia un missatge d'informació per OSC i a la consola
+
 function sendInfoMessage(message){
     console.log(message)
 
