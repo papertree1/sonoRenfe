@@ -8,3 +8,10 @@
 ## Música
 - Dividir la octava pel número d'estacions de cada línia (microtonalitat en funció de la línia)
 - Ritme en funció de la velocitat del tren (la podem obtenir?), de la ocupació de la línia o de la proximitat a Barcelona (enllaços entre línies?)
+
+- Fixar una escala ("mixo com a molt")
+- Comprovar el número de trens amb retard a una línia
+    - Retard mig, màxim, mínim
+    - Cada X trens amb retard, afegir un bemoll
+    - En funció de la màxima quantitat de retard, desajustar tempo
+- Hi ha elements que envien un trigger per un sample

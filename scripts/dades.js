@@ -56,6 +56,8 @@ liniaSeleccionada = "R4"
 seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
 canviDeLinia = false
 
+
+//Setup d'OSC
 var sendPort = new osc.UDPPort({
     // This is where sclang is listening for OSC messages.
     remoteAddress: "127.0.0.1",
@@ -117,6 +119,7 @@ receivePort.on("error", function (err) {
 receivePort.open();
 sendPort.open();
 
+
 /** 
  * Array on guardarem els trens i la seva info
  * [
@@ -131,10 +134,7 @@ sendPort.open();
  */
 trensGuardats = [];
 
-// Obtenir els trens actius d'una línia concreta i enviar-los per OSC
-//TODO: Rebre per OSC la línia que volem
-
-
+// Obtenir els trens actius d'una línia concreta
  getTrainsId(liniaSeleccionada);
 
 // Fem request a l'API cada 12345 segons
@@ -203,9 +203,6 @@ function getTrainsId(linia) {
 /**
  * Col·lecciona la informació de cada tren que està actiu i 
  * emmagatzema a l'array trensGuardats[]
- * {
- *      
- * }
  */
 async function getTrainsInfo() {
     var fetches = [];
@@ -227,7 +224,6 @@ async function getTrainsInfo() {
                 hores = []
                 retard = 0
 
-                // TODO: gestionar què passa quan la RENFE ens retorna una resposta vàlida però sense dades
                 if (!trenNou || !trenNou.train) {
                     continue;
                 }
@@ -322,10 +318,14 @@ async function getTrainsInfo() {
                 liniaSeleccionada = seguentLinia
                 sendInfoMessage(`Monotoritzant la ${liniaSeleccionada}`)
                 canviDeLinia = false
+                // * OSC MESSAGE
             }
         })
 }
 
+/**
+ * Envia un missatge d'informació per OSC i a la consola
+ */
 function sendInfoMessage(message){
     console.log(message)
 
