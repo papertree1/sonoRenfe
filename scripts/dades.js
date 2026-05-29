@@ -347,7 +347,7 @@ function sendOSCMessage(){
         return acc
     }, 0)
     
-    retardMitja = retardTotal / trensAmbRetard
+    retardMitja = Math.round(retardTotal / trensAmbRetard)
 
     var msg = {
         address: "/data",
