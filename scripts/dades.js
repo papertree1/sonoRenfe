@@ -133,6 +133,7 @@ sendPort.open();
  * ]
  */
 trensGuardats = [];
+fetchFailed = 0
 
 // Obtenir els trens actius d'una línia concreta
  getTrainsId(liniaSeleccionada);
@@ -194,11 +195,15 @@ function getTrainsId(linia) {
         .then(getTrainsInfo)
         .catch(err => {
             sendInfoMessage("Tornant a fer els fetches...");
-            getTrainsId(linia);
+
+            fetchFailed ++
+            if (fetchFailed > 20) {
+                console.log("Massa fetchos, m'he agobiat :(")
+                sendOSCTrigger("error")
+                setTimeout(() => getTrainsId(linia), 30000)
+            } else getTrainsId(linia)
         })
-
 }
-
 
 /**
  * Col·lecciona la informació de cada tren que està actiu i 
@@ -206,6 +211,7 @@ function getTrainsId(linia) {
  */
 async function getTrainsInfo() {
     var fetches = [];
+    fetchFailed = 0
 
     // Fer fetch de les dades de tots els trens.
     for (let i = 0; i < trensGuardats.length; i++) {
@@ -258,13 +264,14 @@ async function getTrainsInfo() {
                                 retard = trenGuardat.hora - properaParada.horaArribada
                                 if(retard > 0) {
                                     // Aquest tren va amb retard
-                                    // * OSC MESSAGE
+                                    sendOSCTrigger("retard")
                                 }
                                 if(trenGuardat.properaEstacio != properaParada.estacio){
-                                    // Ha passat a la següent estació // ??! No va
-                                    // * OSC MESSAGE
-                                    // TODO: Resetejar el retard (?)
+                                    // Ha passat a la següent estació
+                                    // reset del retard
+                                    retard = 0
                                     sendInfoMessage(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
+                                    sendOSCTrigger("estacio")
                                 }
                             }
                         }
@@ -281,36 +288,7 @@ async function getTrainsInfo() {
                     // log(trenNou)
                     // log(e)
                 }
-                
             }
-
-
-            // ara = dayjs().unix()
-            // horaTren = trenProva.hora
-            // retard = trenProva.retard
-
-            // var msg = {
-            //     address: "/r2",
-            //     args: [
-            //         {
-            //             type: "i",
-            //             value: ara
-            //         },
-            //         {
-            //             type: "i",
-            //             value: horaTren
-            //         },
-            //         {
-            //             type: "i",
-            //             value: retard
-            //         }
-            //     ]
-            // };
-
-            // TODO: missatge a enviar per OSC
-
-            // sendPort.send(msg);
-            //console.log("Sending message", msg.address, msg.args, "to", sendPort.options.remoteAddress + ":" + sendPort.options.remotePort);
 
             trensGuardats.sort((trena, trenb) => trena.id - trenb.id);
             log('\n')
@@ -323,8 +301,11 @@ async function getTrainsInfo() {
                 liniaSeleccionada = seguentLinia
                 sendInfoMessage(`Monotoritzant la ${liniaSeleccionada}`)
                 canviDeLinia = false
-                // * OSC MESSAGE
+                sendOSCTrigger(`linia`)
             }
+
+            // envia totes les dades per OSC
+            sendOSCMessage()
         })
 }
 
@@ -347,3 +328,57 @@ function sendInfoMessage(message){
     sendPort.send(msg);
 }
 
+function sendOSCMessage(){
+    // quants trens hi ha
+    // trens amb retard
+    // retard total acumulat
+    // retard màxim
+    // retard mitjà
+
+    trens = trensGuardats.length
+
+    trensAmbRetard = trensGuardats.reduce((acc, tren) => {
+        if (tren.retard > 0) acc++
+        return acc
+    }, 0)
+
+    retardTotal = trensGuardats.reduce((acc, tren) => {
+        if (tren.retard > 0) acc += tren.retard
+        return acc
+    }, 0)
+
+    retardMaxim = trensGuardats.reduce((acc, tren) => {
+        if (tren.retard > acc) acc = tren.retard
+        return acc
+    }, 0)
+    
+    retardMitja = retardTotal / trensAmbRetard
+
+    var msg = {
+        address: "/data",
+        args: [
+            {
+                type: "s",
+                value: `${trens} ${trensAmbRetard} ${retardTotal} ${retardMaxim} ${retardMitja}`
+            }
+        ]
+    };
+
+    sendPort.send(msg);
+
+    console.log(`${trens} ${trensAmbRetard} ${retardTotal} ${retardMaxim} ${retardMitja}`);
+}
+
+function sendOSCTrigger(message) {
+    var msg = {
+        address: "/trigger",
+        args: [
+            {
+                type: "s",
+                value: message
+            }
+        ]
+    };
+
+    sendPort.send(msg);
+}
