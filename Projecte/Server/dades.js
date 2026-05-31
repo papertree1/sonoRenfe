@@ -52,8 +52,8 @@ linies = {
     }
 }
 
-liniaSeleccionada = "R4"
-seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
+liniaSeleccionada = "R1"
+seguentLinia = "R1" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
 canviDeLinia = false
 
 //Setup d'OSC
@@ -193,9 +193,10 @@ function getTrainsId(linia) {
 
             fetchFailed ++
             if (fetchFailed > 20) {
-                sendInfoMessage("Massa fetchos, m'he agobiat :(")
+                sendInfoMessage("Massa fetches, m'he agobiat :(")
                 sendOSCTrigger("error")
                 setTimeout(() => getTrainsId(linia), 30000)
+                fetchFailed = 0
             } else getTrainsId(linia)
         })
 }
@@ -225,6 +226,7 @@ async function getTrainsInfo() {
     Promise.all(fetches)
         .then(trensNous => {
             trensTrobats = 0
+            trainIds = []
 
             for (trenNou of trensNous) {
                 hores = []
@@ -245,14 +247,15 @@ async function getTrainsInfo() {
 
                 // Només ens interessa la següent parada
                 properaParada = hores.sort(hora => hora.horaArribada)[0];
-
                 trainId = 0
+                
                 // Comprovem si el trenNou ja està a l'array trensGuardats[]
                 if(properaParada != undefined){ // ? Hi ha d'haver una millor manera de fer això
                     for (trenGuardat of trensGuardats){
                         if (trenNou.id == trenGuardat.id){
                             trainId = trenGuardat.id
                             trensTrobats++
+                            trainIds.push(trainId)
 
                             if(trenGuardat.hora != undefined){
                                 retard = trenGuardat.hora - properaParada.horaArribada
@@ -290,6 +293,9 @@ async function getTrainsInfo() {
             log(dayjs().format("HH:mm:ss"))
             console.table(trensGuardats);
             log(`Trens repetits: ${trensTrobats}`)
+
+            // purga de trens que ja no hi són
+            trensGuardats = trensGuardats.filter(tren => trainIds.includes(tren.id));
 
             if(canviDeLinia){
                 trensGuardats = []
@@ -361,7 +367,7 @@ function sendOSCMessage(){
 
     sendPort.send(msg);
 
-    console.log(`${trens} ${trensAmbRetard} ${retardTotal} ${retardMaxim} ${retardMitja}`);
+    console.log(`Enviant per OSC: ${trens} ${trensAmbRetard} ${retardTotal} ${retardMaxim} ${retardMitja}`);
 }
 
 function sendOSCTrigger(message) {
