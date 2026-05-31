@@ -73,7 +73,7 @@ sendPort.open();
 
 // Demo RENFE in 4 min (240000 ms)
 setTimeout(() => {
-    sendInfoMessage("Iniciant demo RENFE en 4 minuts...");
+    sendInfoMessage("Iniciant demo RENFE de 4 minuts...");
 }, 0);
 
 setTimeout(() => {
@@ -105,7 +105,7 @@ setTimeout(() => {
 }, 100000);
 
 setTimeout(() => {
-    sendOSCMessage(15, 8, 3800, 800, 475)
+    sendOSCMessage(18, 8, 3800, 800, 475)
 }, 120000);
 
 setTimeout(() => {
@@ -125,7 +125,7 @@ setTimeout(() => {
 }, 180000);
 
 setTimeout(() => {
-    sendOSCMessage(15, 13, 8700, 2900, 669)
+    sendOSCMessage(13, 13, 8700, 2900, 669)
 }, 190000);
 
 setTimeout(() => {
