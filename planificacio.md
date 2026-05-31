@@ -14,3 +14,9 @@
 - Exploració i experimentació de propostes sonores (2 setmanes)
 - Sonificació de les dades (4 setmanes)
 - Interfície (2 setmanes)
+
+## Acompliment dels objecius i la planificació
+- 
+
+## Desenvolupament futur
+- 

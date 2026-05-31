@@ -1,14 +1,23 @@
 # sonoRenfe
-Sonificació de les dades de Renfe i Adif.
+Projecte de sonificació de la situació de Rodalies Renfe a partir de les APIS d'informació creat per [Adrià Illa Sanchis](https://github.com/papertree1) i [Omar Olmedo Ferrer](https://github.com/stratocastero)
 
-## Planificació i objectius
-Els objectius i la planificació es poden trobar [aquí](planificacio.md)
+## Instruccions per arrencar el projecte
+1. Clonar o descarregar el repositori
+2. Entrar a la carpeta `/Projecte/Server`
+3. Obrir una terminal i executar les ordres `npm i` i `node dades.js` (s'ha de tenir instal·lat [NodeJS](https://nodejs.org/))
+4. Obrir el patch de Max MSP de la carpeta `/Projecte/Patch` i activar l'àudio
 
-## Memòria
-La memòria del projecte es pot trobar [aquí](memoria.md)
+### Alternativa: demo del projecte
+1. Clonar o descarregar el repositori
+2. Entrar a la carpeta `Projecte/Server`
+3. Obrir el patch de Max MSP de la carpeta `/Projecte/Patch` i activar l'àudio
+4. Obrir una terminal i executar les ordres `npm i` i `node dades_demo.js` (s'ha de tenir instal·lat [NodeJS](https://nodejs.org/))
 
-## Recursos
-Els recursos que hem anat trobant al llarg del projecte es poden trobar [aquí](recursos.md)
+## Documentació
+Els **objectius**, la planificació i les conclusions del projecte es poden trobar [aquí](planificacio.md)
 
-## Idees
-Les idees que hem anat tenint al llarg del projecte es poden trobar [aquí](idees.md)
+La **memòria** del projecte es pot trobar [aquí](memoria.md)
+
+Els **recursos** que hem anat trobant al llarg del projecte es poden trobar [aquí](recursos.md)
+
+Les **idees** que hem anat tenint al llarg del projecte es poden trobar [aquí](idees.md)
