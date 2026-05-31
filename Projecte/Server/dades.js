@@ -52,8 +52,8 @@ linies = {
     }
 }
 
-liniaSeleccionada = "R2"
-seguentLinia = "R2" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
+liniaSeleccionada = "R4"
+seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
 canviDeLinia = false
 
 //Setup d'OSC

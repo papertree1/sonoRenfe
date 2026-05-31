@@ -124,11 +124,5 @@
 ## 26 de maig
 - Miau
 
-## 28 de maig
-- Miau
-
 ## 2 de juny
-- Miau
-
-## 9 de juny
-- Miau
+- Presentació
