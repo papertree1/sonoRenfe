@@ -68,7 +68,6 @@ receivePort.on("error", function (err) {
 });
 
 // Open the socket
-receivePort.open();
 sendPort.open();
 
 // Demo RENFE in 4 min (240000 ms)
@@ -77,12 +76,9 @@ setTimeout(() => {
 }, 0);
 
 setTimeout(() => {
-sendOSCMessage(15, 0, 0, 0, 0)
-}, 0);
-
-setTimeout(() => {
+    sendOSCMessage(15, 0, 0, 0, 0)
     sendOSCTrigger("linia")
-}, 12000);
+}, 0);
 
 setTimeout(() => {
     sendOSCMessage(15, 3, 900, 650, 300)
@@ -158,6 +154,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     sendInfoMessage("Demo finalitzada, gràcies per viatjar amb nosaltres!");
+    sendPort.close();
 }, 240000);
 
 // Envia un missatge d'informació per OSC i a la consola
