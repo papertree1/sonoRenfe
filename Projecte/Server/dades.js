@@ -258,12 +258,10 @@ async function getTrainsInfo() {
                             trainIds.push(trainId)
 
                             if(trenGuardat.hora != undefined){
-                                retard = trenGuardat.hora - properaParada.horaArribada
+                                if (trenGuardat.hora - properaParada.horaArribada < 3600) retard = trenGuardat.hora - properaParada.horaArribada
                                 if (retard < -3600) retard = trenGuardat.retard
-                                if(retard > 0) {
-                                    // Aquest tren va amb retard
-                                    sendOSCTrigger("retard")
-                                }
+                                if (retard > 0) sendOSCTrigger("retard")
+
                                 if(trenGuardat.properaEstacio != properaParada.estacio){
                                     // Ha passat a la següent estació
                                     retard = 0
@@ -352,7 +350,7 @@ function sendOSCMessage(){
         return acc
     }, 0)
     
-    retardMitja = Math.round(retardTotal / trensAmbRetard)
+    retardMitja = trensAmbRetard ? Math.round(retardTotal / trensAmbRetard) : 0
 
     var msg = {
         address: "/data",
