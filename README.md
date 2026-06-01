@@ -3,10 +3,10 @@ Projecte de sonificació de la situació de Rodalies Renfe a partir de les APIS 
 
 ## Funcionament del projecte
 ### Servidor
-El servidor de JavaScript (NodeJS) demana a la API de Renfe les dades de tots els trens d'una línia i redueix tots els horaris
+El servidor de JavaScript (NodeJS) demana a la API de Renfe les dades de tots els trens d'una línia i redueix tots els horaris de trens i parades a cinc paràmetres: trens totals, trens amb retard, retard total, retard màxim i retard mitjà per tren. També emet missatges d'avís quan hi ha un tren que s'ha endarrerit o s'ha fet un canvi de línia. Tota aquesta informació s'envia per OSC al Patch de Max, alhora que es rep un missatge si s'ha canviat la linia monitoritzada.
 
 ### Patch de Max
-El patch de Max, que sonifica les dades que rep per OSC, és la implementació d'un
+El patch de Max, que sonifica les dades que rep per OSC, és la implementació d'una obra de sintetitzador ambient dissenyada perquè sigui controlada pels diferents paràmetres de la línia monitoritzada.
 
 Paràmetres mapejats:
 - **Trens totals**: controla el PWM de l'ona quadrada del baix i la Q del LPF del baix
