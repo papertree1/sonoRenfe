@@ -125,7 +125,7 @@
 
 ## 26 de maig
 - Resolució de problemes amb el servidor (trens duplicats, càlcul correcte del retard, etc)
-- Actualització del patch de Max provisional amb tots els missatges OSC implementats i creació de l'apartat musical generatiu
+- Actualització del patch de Max provisional amb tots els missatges OSC implementats i creació de l'apartat musical generatiu (veure l'arxiu d'[idees](/idees.md) i el [README](/README.md) per més informació)
 - Reordenació de l'estructura de carpetes per deixar tot el material final a la carpeta [Projecte](./Projecte/), separat en el servidor de JavaScript i el patch de Max
 
 ## 2 de juny

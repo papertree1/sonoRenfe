@@ -93,7 +93,7 @@ setTimeout(() => {
 }, 76000);
 
 setTimeout(() => {
-    sendOSCTrigger("estació")
+    sendOSCTrigger("estacio")
 }, 84000);
 
 setTimeout(() => {
@@ -137,7 +137,7 @@ setTimeout(() => {
 }, 193000);
 
 setTimeout(() => {
-    sendOSCTrigger("estació")
+    sendOSCTrigger("estacio")
 }, 193500);
 
 setTimeout(() => {
