@@ -154,8 +154,11 @@ setTimeout(() => {
 
 setTimeout(() => {
     sendInfoMessage("Demo finalitzada, gràcies per viatjar amb nosaltres!");
-    sendPort.close();
 }, 240000);
+
+setTimeout(() => {
+    sendPort.close();
+}, 242000);
 
 // Envia un missatge d'informació per OSC i a la consola
 function sendInfoMessage(message){
