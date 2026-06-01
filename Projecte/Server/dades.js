@@ -52,8 +52,8 @@ linies = {
     }
 }
 
-liniaSeleccionada = "R1"
-seguentLinia = "R1" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
+liniaSeleccionada = "R4"
+seguentLinia = "R4" // Buffer per no fer el canvi de línia enmig d'una sèrie de fetchs
 canviDeLinia = false
 
 //Setup d'OSC
@@ -208,7 +208,7 @@ async function getTrainsInfo() {
     var fetches = [];
     fetchFailed = 0
 
-    // Fer fetch de les dades de tots els trens.
+    // Fer fetch de les dades de tots els trens
     for (let i = 0; i < trensGuardats.length; i++) {
         fetches.push(
             fetch(`https://serveisgrs.rodalies.gencat.cat/api/trains/${trensGuardats[i].id}`)
@@ -266,7 +266,6 @@ async function getTrainsInfo() {
                                 }
                                 if(trenGuardat.properaEstacio != properaParada.estacio){
                                     // Ha passat a la següent estació
-                                    // reset del retard
                                     retard = 0
                                     sendInfoMessage(`El tren ${trainId} ha arribat a ${trenGuardat.properaEstacio} i va a ${properaParada.estacio}`)
                                     sendOSCTrigger("estacio")
@@ -295,7 +294,7 @@ async function getTrainsInfo() {
             log(`Trens repetits: ${trensTrobats}`)
 
             // purga de trens que ja no hi són
-            trensGuardats = trensGuardats.filter(tren => trainIds.includes(tren.id));
+            trensGuardats = trensGuardats.filter(tren => trainIds.includes(tren.id)); //TODO: Fer això només cada 2/3 voltes, a vegades els fetchos fallen i eliminar un tren significa eliminar el seu retard
 
             if(canviDeLinia){
                 trensGuardats = []
