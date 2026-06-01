@@ -55,6 +55,8 @@
 
 ## 28 d'abril
 - *Pre-presentació* (no hi ha gaire comentaris...)
+- Hem anat a l'estació de tren de l'Hospitalet de Llobregat a fer *field recordings* de trens per a fer servir com a base de la sonificació.
+- Hem filtrat, editat, processat i tallat moments interessants i hem obtingut material tant per elements protagonistes com per elements de *background*.
 
 ## 5 de maig
 - Hem comprovat que els horaris teòrics no serveixen de gaire perquè la pròpia Renfe no programa els trens per aquelles hores (l'horari al que assignen els trens a la primera parada de la línia ja no es correspon)
