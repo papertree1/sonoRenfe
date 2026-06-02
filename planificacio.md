@@ -32,4 +32,3 @@
 - Refinar el servidor per calcular els retards amb més precisió (p.e. des de primera hora del matí quan s'assignen els trens, totes les línies alhora, etc) 
 - Allotjar el servidor online i trobar una manera de fer públic online el patch de Max perquè es pugui escoltar en directe des de un web
 - Donar més alternatives a l'hora d'escoltar les dades: diferents escales, diferents instruments, activació/desactivació de capes, filtres per escoltar-ho de fons, etc
-- 
