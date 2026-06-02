@@ -1,8 +1,8 @@
 {
-	"name" : "sonoRenfe",
+	"name" : "sonoRenfeBo",
 	"version" : 1,
-	"creationdate" : 3862933076,
-	"modificationdate" : 3862933077,
+	"creationdate" : 3863203310,
+	"modificationdate" : 3863203310,
 	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"sonoRenfe.maxpat" : 			{
+			"sonoRenfeBo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1

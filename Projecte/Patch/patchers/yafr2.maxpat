@@ -658,7 +658,7 @@
 
 							}
  ],
-						"originid" : "pat-60",
+						"originid" : "pat-62",
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
@@ -1272,7 +1272,7 @@
 
 							}
  ],
-						"originid" : "pat-62"
+						"originid" : "pat-64"
 					}
 ,
 					"patching_rect" : [ 21.0, 652.0, 118.0, 22.0 ],
@@ -1954,7 +1954,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 379.0, 1.0, 25.0, 25.0 ]
 				}
 
@@ -1967,7 +1967,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 255.0, 1.0, 25.0, 25.0 ]
 				}
 
@@ -1980,7 +1980,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 129.0, 1.0, 25.0, 25.0 ]
 				}
 
@@ -2661,7 +2661,7 @@
 
 			}
  ],
-		"originid" : "pat-58"
+		"originid" : "pat-60"
 	}
 
 }
